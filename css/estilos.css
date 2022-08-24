@@ -1,0 +1,35 @@
+:root {
+    --celeste: #03AAE6;
+    --azul: #080F28;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    background: var(--azul);
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+header {
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #fff;
+}
