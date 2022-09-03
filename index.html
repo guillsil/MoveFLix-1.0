@@ -12,66 +12,74 @@
     <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
     <title>MoveFlix</title>
 </head>
-<body>
+<body><!-- header -->
     <header>
-        <div class="nav_bar">
-            <div class="contenedor">
-                <div class="contenedor_logo"><a href="#"><img src="/img/iconos/logo_header.png" class="logo" alt=""></a></div>
-                <div class="contenedor_menu">
-                    <ul class="menu">
-                        <li><a href="#" class="list_menu" class="active">Inicio</a></li>
-                        <li><a href="#" class="list_menu">Series</a></li>
-                        <div class="serie_arrow">
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <li><a href="#" class="list_menu">Peliculas</a></li>
-                        <div class="movie_arrow">
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <li><a href="#" class="list_menu">Categorias</a></li>
-                        <div class="category_arrow">
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <li><a href="#" class="list_menu">Tienda</a></li>
-                        <div class="store_arrow">
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                    </ul>
-                </div>
-        
-                <div class="contenedor_perfil">
-                    <a href="#"><img src="/img/iconos/icon_netflix.png"  class="perfil_logo" alt=""></a>
-                        <div class="perfil_arrow">
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                </div>
-            
-             </div>
-        </div>
-    </header>
-    <div class="side_bar">
-        <i class=" left_menu fa-solid fa-house"></i>
-        <i class=" left_menu fa-solid fa-magnifying-glass"></i>
-        <i class=" left_menu fa-solid fa-user"></i>
-        <i class=" left_menu fa-solid fa-tv"></i>
-        <i class=" left_menu fa-solid fa-bookmark"></i>
-        <i class=" left_menu fa-solid fa-store"></i>
-    </div>
+        <!-- nav -->
+        <div class="bar contenedor">
+            <!-- logo -->
+            <a href="#" class="logo">
+                Move<span>Flix</span>
+            </a>
+            <!-- busqueda -->
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" name="" id="busqueda_input">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- usuario -->
+            <a href="#" class="usuario">
+                <img src="/img/iconos/icon_netflix.png"  class="usuario_logo" alt="">
+            </a>
+            <!-- navvar -->
+            <div class="navbar">
+                <a href="#" class="list_menu active" >
+                    <i class="fa-solid fa-house-user"></i>
+                    <span class="link_home">Inicio</span>
+                </a>
     
-    <menu>
-        <div class="movie_destacada">
-            <div class="conteiner"></div>
-            <h3 class="titulo">Avatar 2</h3>
-            <p class="descripcion">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit molestias ipsum quisquam explicabo provident eligendi eos perferendis, minus repudiandae molestiae nostrum ipsam similique esse exercitationem recusandae cumque sit dolores fuga!
-                Delectus at beatae vero, inventore asperiores consequatur eligendi dignissimos consectetur mollitia autem laudantium recusandae harum! Dolor nostrum, tenetur repudiandae debitis quis cum iste consequatur quidem minima quisquam illum, voluptas minus?
-                Quas eaque quasi obcaecati ullam dolores provident alias quia qui culpa error cumque, natus earum perspiciatis esse? Officiis aperiam non tenetur dolorum. Iusto consectetur corrupti molestias labore quas modi iste.
-                Id eveniet dolorem consequuntur sit dolore molestiae illo vitae pariatur, exercitationem commodi rem nisi debitis rerum tempore quam porro a aspernatur sunt similique maxime libero inventore repellat? Eius, dicta aspernatur.
-            </p>
-            <button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fa-solid fa-circle-info"></i>Mas informacion</button>
-        </div>
-    </menu>
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="link_nav">Series</span>
+                </a>
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="link_nav">Peliciculas</span>
+                </a>
 
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="link_nav">Categorias</span>
+                </a>
+
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="link_nav">Tienda</span>
+                </a>
+            </div>
+    
+         </div>
+    </header>
+
+    <!-- homee -->
+    <section class="home contenedor" id="home">
+        <img src="/img/peliculas/pelicula_destacada/avatar2.jpeg" alt="" class="home_img">
+        <!-- <video src="/img/peliculas/pelicula_destacada/trailer_avatar2.mp4"  class="home_img" muted autoplay></video> -->
+
+        <div class="home_info">
+            <h1 class="home_titulo">Avatar 2</h1>
+            <p class="home_descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim sint fuga architecto, aliquid perferendis reprehenderit rem voluptate? Voluptate error quia dignissimos ullam commodi, adipisci dolore, sapiente debitis, at doloribus perferendis!</p>
+            <a href="#" class="watch_home">
+                <i class="fa-solid fa-play"></i>
+                <span class="watch_home_text">Ver ahora</span>
+            </a>
+        </div>
+    </section>
+    
+    <section class="new contenedor" id="new">
+        <div class="boveda">
+            <h2 class="boveda_titulo">Peliculas Nuevas</h2>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
