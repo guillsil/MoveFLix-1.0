@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/iconos/logo_ico.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <title>MoveFlix</title>
+</head>
+<body><!-- header -->
+    <header>
+        <!-- nav -->
+        <div class="bar contenedor">
+            <!-- logo -->
+            <a href="#" class="logo">
+                Move<span>Flix</span>
+            </a>
+            <!-- busqueda -->
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" name="" id="busqueda_input">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- usuario -->
+            <a href="#" class="usuario">
+                <img src="/img/iconos/icon_netflix.png"  class="usuario_logo" alt="">
+            </a>
+            <!-- navvar -->
+            <div class="navbar">
+                <a href="#" class="list_menu active" >
+                    <i class="fa-solid fa-house-user"></i>
+                    <span class="link_home">Inicio</span>
+                </a>
+    
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="link_nav">Series</span>
+                </a>
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="link_nav">Peliciculas</span>
+                </a>
+
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="link_nav">Categorias</span>
+                </a>
+
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="link_nav">Tienda</span>
+                </a>
+            </div>
+    
+         </div>
+    </header>
+
+    <!-- Movie Container -->
+    <div class="play_contenedor contenedor">
+        <!-- imagen principal -->
+        <img src="/img/peliculas/pelicula_destacada/avatar.jpg" alt="" class="movie_imag">
+        <!-- Titulo de la pelicula -->
+        <div class="movie_text">
+            <h2>Avatar 2</h2>
+            <!-- Valoracion: poner estrellas que coresponden segun la pelicula -->
+            <div class="calidad">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

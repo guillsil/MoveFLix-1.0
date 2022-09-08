@@ -124,7 +124,7 @@ header{
 .list_menu:hover,
 .active{
     color: #dda90e;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s all linear;
 }
 .list_menu .fa-solid{
@@ -204,4 +204,12 @@ header{
     align-items: center;
     background: #141414;
     border: 1px solid hsl(200 100% 99% /10%)
+}
+/* movie play */
+.movie_img{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
 }
