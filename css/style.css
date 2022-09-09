@@ -148,8 +148,10 @@ header{
     height: 100%;
     z-index:    -1;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     justify-content: center;
+    align-items: center;
+    
 }
 .home_info{
     padding-left: 40px;
@@ -170,12 +172,17 @@ header{
     font-size: 2rem;
     font-weight: 600;
 }
+/* botones */
 .watch_home{
     align-items: center;
     column-gap: 0.8rem;
     color: #dda90e;
     display: flex;
 }
+
+
+
+
 .watch_home .fa-solid:hover{
     background:white;
     transition: 0.2s all linear;
@@ -377,7 +384,7 @@ footer {
     max-width: 350px;
     margin-top: 30px;
     font-weight: 500;
-    color: wheat;
+    color: #ffffffcc;
     font-size: 18px;
 }
 
@@ -389,7 +396,7 @@ footer {
 
 .caja-footer a {
     margin-top: 10px;
-    color: wheat;
+    color: #ffffffcc;
     font-weight: 600;
 }
 
