@@ -268,16 +268,16 @@ movie_img{
 }
 .generos span{
     padding: 4px 4px;
-    background: rgb(20, 20, 20, 0.6);
+    background: rgba(223, 185, 18, 0.2);
 }
 .ver_movie{
     align-items: center;
     display: flex !important;
     position: absolute;
-    bottom: 18rem;
+    bottom: 14rem;
     right: 10rem;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 75%;
     font-size: 50px;
     background: #dda90e;
@@ -285,17 +285,19 @@ movie_img{
 }
 @keyframes animate{
     0%{
-       box-shadow: 0 0 0 0 rgba(221, 151, 38, 0.7);
+       box-shadow: 0 0 0 0 rgba(228, 170, 77, 0.7);
     }
     40%{
         box-shadow: 0 0 0 50px rgba(221, 219, 71, 0);
-     }
-     80%{
-        box-shadow: 0 0 0 rgb(255, 180, 58, 0.7);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgb(255, 180, 58, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 rgb(255, 193, 7, 0);
      }
 }
     
-}
 /*  @keyframes animate{
     0%{
         transform: scale(1);
@@ -308,3 +310,113 @@ movie_img{
     }
     
  } */
+
+
+
+ /* Trailer Video */
+.contenedor_video{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: hsl(234 10% 20% / 60%);
+    z-index: 400;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #141414;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.caja-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.logo_footer{
+    font-weight: 600;
+    color: #dda90e;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    font-size: 2rem;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+.logo_footer span{
+    color: #dda90e;
+}
+
+.caja-footer .lorem {
+    max-width: 350px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: wheat;
+    font-size: 18px;
+}
+
+.caja-footer h2 {
+    margin-bottom: 30px;
+    color: #dda90e;
+    font-weight: 700;
+}
+
+.caja-footer a {
+    margin-top: 10px;
+    color: wheat;
+    font-weight: 600;
+}
+
+.caja-footer a:hover {
+    opacity: 0.8;
+}
+
+.caja-footer a .fab {
+    font-size: 20px;
+}
+
+.caja-footer i {
+    width: 20px;
+    box-sizing: border-box;
+}
+
+.caja-copy {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.caja-copy p {
+    margin-top: 20px;
+    color: #dda90e;
+}
+
+.caja-copy hr {
+    border: none;
+    height: 1px;
+    background-color: #dda90e;
+}
