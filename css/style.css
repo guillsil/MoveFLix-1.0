@@ -2,7 +2,7 @@
     --celeste: #03AAE6;
     --azul: #080F28;
     --black_pag: #141414;
-    --dorado_pag:#EABE3F ;
+    --dorado_pag:#dda90e ;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -156,7 +156,7 @@ header{
 }
 .home_info h1{
     font-family: 'Roboto', sans-serif;
-    color: #dfbe04ec;
+    color: #dda90e;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
@@ -366,7 +366,10 @@ footer {
     margin-left: 60px;
     margin-bottom: 5px;
 }
-.logo_footer span{
+.parte_white{
+    color: #ffffff;
+}
+.parte_dorada{
     color: #dda90e;
 }
 
