@@ -319,7 +319,45 @@ movie_img{
      font-weight: 500;
         font-size: 1.2rem;
 }
-
+/* caja del carrusel de las peliculas */
+.box_movie{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+/* hay que agregar una animacion cuando se pase el puntero por la imagen */
+.box_movie_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.1s all linear;
+}
+.box_movie .box_titulo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(8deg, rgba(131, 123, 38, 0.9)14 0%, hsla(40, 33%, 26%, 0.9) 44%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+.titulo_movie{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.genero_movie{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffffcc;
+}
 
 
 
