@@ -179,14 +179,17 @@ header{
     color: #dda90e;
     display: flex;
 }
-
-
-
-
 .watch_home .fa-solid:hover{
     background:white;
     transition: 0.2s all linear;
 }
+
+.ver_peli{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
 .watch_home > span{
     color: white;
     font-size: 1rem;
@@ -204,6 +207,7 @@ header{
     background: #141414;
 }
 /* boveda */
+/* 
 .boveda{
     display: flex;
     padding: 8px 14px;
@@ -216,7 +220,7 @@ header{
     font-size: 1.2rem;
     font-weight: 500;
 }
-
+ */
 
 
 
@@ -356,8 +360,83 @@ movie_img{
 .genero_movie{
     font-size: 1rem;
     font-weight: 500;
-    color: #ffffffcc;
+    color: #dda90e9f;
+    margin-bottom: 0.5rem;
 }
+
+/* swiper botones */
+
+.swiper_botones{
+    display: flex;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    position: static !important;
+    margin: 0 0 0 20px !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    color: #ffffffcc;
+    font-size: 20px !important;
+    font-weight: 500;
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after{
+    color: white;
+} 
+
+/* Peliculas y Series */
+.peliculas .boveda{
+    padding: 10px 15px;
+}
+.contenido_peliculas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.contenido_peliculas .box_movie:hover .box_movie_img{
+    transform: scale(1.1);
+    transition: 0.5s all linear;
+}
+
+/* paginas control */
+.siguiente_pag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem;
+}
+.siguiente_btn{
+    background-color: #dda90e;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.siguiente_btn:hover{
+    background-color: #ffffffcc;
+    transition: 0.5s all linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
