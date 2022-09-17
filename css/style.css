@@ -304,36 +304,21 @@ movie_img{
         box-shadow: 0 0 0 rgb(255, 193, 7, 0);
      }
 }
-    
-/*  @keyframes animate{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-    
- } */
 
-
-
- /* Trailer Video */
-.contenedor_video{
+/* boveda */
+.boveda{
     display: flex;
-    position: fixed;
+    padding: 8px 14px;
+    justify-content: space-between;
+    background: rgb(221, 169, 14, 0.5);
+    border: 1px solid rgba(255, 254, 250, 0.1);
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: hsl(234 10% 20% / 60%);
-    z-index: 400;
+    margin-bottom: 1rem;
 }
-
+.boveda_titulo{
+     font-weight: 500;
+        font-size: 1.2rem;
+}
 
 
 

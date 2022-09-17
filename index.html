@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <!-- link swiper -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <title>MoveFlix</title>
 </head>
 <body><!-- header -->
@@ -61,8 +63,7 @@
 
     <!-- homee -->
     <section class="home contenedor" id="home">
-        <video src="/img/peliculas/pelicula_destacada/trailer_avatar2.mp4" class="home_img" autoplay muted></video>
-        <!-- <img src="/img/peliculas/pelicula_destacada/avatar2.jpeg" alt="" class="home_img"> -->
+        <img src="/img/peliculas/pelicula_destacada/avatar2.jpeg" alt="" class="home_img">
 
         <div class="home_info">
             <h1 class="home_titulo">Avatar 2</h1>
@@ -73,45 +74,94 @@
             </a>
         </div>
     </section>
+
+    <!-- Peliculas News Section -->
+    <section class="polpular contenedor" id="popular">
+        <!-- boveda -->
+        <div class="boveda">
+            <h2 class="boveda_titulo">Peliculas Nuevas</h2>
+        </div>
+        <!-- contenido -->
+        <div class="contenido_popular swiper">
+            <div class="swiper-wrapper">
+                <!-- box 1-->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/i_am_legend_2_by_diamonddead_art_df1urt4-fullview.jpg" class="box_movie_img" alt="">
+                        <div class="box_text">
+                            <h2 class="box_titulo">I am legend 2</h2>
+                            <span class="movie_type">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 2-->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/madame_web.jpg" class="box_movie_img" alt="">
+                        <div class="box_text">
+                            <h2 class="box_titulo">I am legend 2</h2>
+                            <span class="movie_type">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 3-->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/i_am_legend_2_by_diamonddead_art_df1urt4-fullview.jpg" class="box_movie_img" alt="">
+                        <div class="box_text">
+                            <h2 class="box_titulo">I am legend 2</h2>
+                            <span class="movie_type">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 4-->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/i_am_legend_2_by_diamonddead_art_df1urt4-fullview.jpg" class="box_movie_img" alt="">
+                        <div class="box_text">
+                            <h2 class="box_titulo">I am legend 2</h2>
+                            <span class="movie_type">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 5-->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/i_am_legend_2_by_diamonddead_art_df1urt4-fullview.jpg" class="box_movie_img" alt="">
+                        <div class="box_text">
+                            <h2 class="box_titulo">I am legend 2</h2>
+                            <span class="movie_type">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+   
+
     
     
-
-    <script src="/js/main.js"></script>
-    <!-- fila para columna populares -->
-
-    <section class="new contenedor" id="new">
-        <div class="boveda">
-            <h2 class="titulo_boveda">Peliculas Nuevas</h2>
-        </div>
-    <!-- contenido similar a netflix , provisorio luego se cambia , esta hecho con js -->
-    <div class="new-contenido swiper">
-        <div class="swiper-slide"></div>
-    </div>
-    </section>
-    <br><br><br><br><br>
-    <section class="new contenedor" id="new">
-        <div class="boveda">
-            <h2 class="titulo_boveda">Series Nuevas</h2>
-        </div>
-    <!-- contenido similar a netflix , provisorio luego se cambia , esta hecho con js -->
-    <div class="new-contenido swiper">
-        <div class="swiper-slide"></div>
-    </div>
-    </section>
-    <br><br><br><br><br>
-    <section class="new contenedor" id="new">
-        <div class="boveda">
-            <h2 class="titulo_boveda">MoveFlix Exclusive</h2>
-        </div>
-    <!-- contenido similar a netflix , provisorio luego se cambia , esta hecho con js -->
-    <div class="new-contenido swiper">
-        <div class="swiper-slide"></div>
-    </div>
-    </section>
-
-
-
-
 
 
 
@@ -175,7 +225,10 @@
             <p>Todos los derechos reservados © 2022 <b>MoveFlix</b></p>
         </div>
     </footer>
-
+    <!-- link js -->
+    <script src="/js/main.js"></script>
+    <!-- links swiper -->
+    <script src="/js/swiper-bundle.min.js"></script>
     
 </body>
 </html>
