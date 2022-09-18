@@ -4,6 +4,20 @@
     --black_pag: #141414;
     --dorado_pag:#dda90e ;
 }
+/*  */
+::selection{
+    background-color: #dda90e;
+    color: #141414;
+}
+/* scroll bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent ;
+}
+html::-webkit-scrollbar-thumb {
+    background: #dda90e;
+    border-radius: 0.5rem;
+}
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -17,7 +31,7 @@ body{
     color: white;
 }
 section{
-    padding: 3rem 0 2rem ;
+    padding: 3 rem 0 2rem ;
 }
 img{
     width: 100%;
@@ -137,10 +151,10 @@ header{
 .home{
     position: relative;
     min-height: 470px;
-    margin-top: 1rem !important;
     align-items: center;
     display: flex;
     border-radius: 01.5rem;
+    margin-bottom: 1rem;
 }
 .home_img{
     position: absolute;
@@ -154,7 +168,9 @@ header{
     
 }
 .home_info{
-    padding-left: 40px;
+    padding-left: 50px;
+    z-index: 1;
+    margin-top: 250px;    
 }
 .home_info h1{
     font-family: 'Roboto', sans-serif;
@@ -165,13 +181,17 @@ header{
 .home_info p{
     font-size: 0.938em;
     margin: 10px 0 20px;
-    color: #ffffffcc;
+    color: #080F28;
 
 }
 .home_titulo{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
+.home_titulo span{
+    color: white;
+}
+
 /* botones */
 .watch_home{
     align-items: center;
@@ -181,7 +201,7 @@ header{
 }
 .watch_home .fa-solid:hover{
     background:white;
-    transition: 0.2s all linear;
+    transition: 0.8s all linear;
 }
 
 .ver_peli{
@@ -206,21 +226,6 @@ header{
     border-radius: 20%;
     background: #141414;
 }
-/* boveda */
-/* 
-.boveda{
-    display: flex;
-    padding: 8px 14px;
-    justify-content: space-between;
-    align-items: center;
-    background: #dda90e;
-    border: 1px solid hsl(200 100% 99% /10%)
-}
-.titulo_boveda{
-    font-size: 1.2rem;
-    font-weight: 500;
-}
- */
 
 
 
@@ -412,10 +417,13 @@ movie_img{
     border-radius: 10px;
     color: #ffffff;
     font-weight: 500;
+    margin-right: 20px;
+
 }
 .siguiente_btn:hover{
     background-color: #ffffffcc;
     transition: 0.5s all linear;
+
 }
 
 
@@ -532,3 +540,9 @@ footer {
     height: 1px;
     background-color: #dda90e;
 }
+
+
+
+
+
+/* Responsive */
