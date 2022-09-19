@@ -322,7 +322,8 @@ movie_img{
     background: rgb(221, 169, 14, 0.5);
     border: 1px solid rgba(255, 254, 250, 0.1);
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 .boveda_titulo{
      font-weight: 500;
@@ -370,19 +371,10 @@ movie_img{
 }
 
 /* swiper botones */
-
-.swiper_botones{
-    display: flex;
-}
-.swiper-button-next,
-.swiper-button-prev{
-    position: static !important;
-    margin: 0 0 0 20px !important;
-}
 .swiper-button-next::after,
 .swiper-button-prev::after{
-    color: #ffffffcc;
-    font-size: 20px !important;
+    color: #dda90e;
+    font-size: 50px !important;
     font-weight: 500;
 }
 .swiper-button-next:hover::after,

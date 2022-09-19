@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/iconos/logo_ico.png">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <!-- link swiper -->
+
+    <title>MoveFlix</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <div class="bar contenedor">
+            <!-- logo -->
+            <a href="#" class="logo">
+                Move<span>Flix</span>
+            </a>
+            <!-- busqueda -->
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" name="" id="busqueda_input">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- usuario -->
+            <a href="#" class="usuario">
+                <img src="/img/iconos/icon_netflix.png" class="usuario_logo" alt="">
+            </a>
+            <!-- navvar -->
+            <div class="navbar">
+                <a href="/index.html" class="list_menu">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span class="link_home">Inicio</span>
+                </a>
+
+                <a href="/series.html" class="list_menu">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="link_nav">Series</span>
+                </a>
+                <a href="/peliculas.html" class="list_menu active">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="link_nav">Peliciculas</span>
+                </a>
+
+                <a href="/categorias.html" class="list_menu">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="link_nav">Categorias</span>
+                </a>
+
+                <a href="/tienda.html" class="list_menu">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="link_nav">Tienda</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- homee -->
+    <section class="home contenedor" id="home">
+        <video src="/img/video.mp4" class="home_img" autoplay muted ></video>
+        <div class="home_info">
+            <h1 class="home_titulo">Move<span>Flix</span></h1>
+            <p class="home_descripcion">MoveFlix es un servicio de streaming por suscripción que les permite a sus miembros ver series y películas sin publicidades en un dispositivo con conexión a internet. También puedes descargar series y películas en un dispositivo con iOS, Android o Windows y verlas sin conexión a internet.</p>
+            <a href="/movie.html" class="watch_home">
+                <i class="fa-solid fa-play"></i>
+                <span class="watch_home_text">Ver ahora</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Peliculas que te recomendamos -->
+    <section class="polpular contenedor" id="popular">
+        <!-- boveda -->
+        <div class="boveda">
+            <h2 class="boveda_titulo">Películas que te recomendamos</h2>
+            <!-- swipper botones -->
+
+            <!-- <div class="swiper_botones">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> -->
+        </div>
+        <!-- contenido  uso swipeer enlace:https://stackoverflow.com/questions/60715402/swiper-js-autoplay-slider-->
+        <div class="contenido_popular swiper">
+            <div class="swiper-wrapper">
+                <!-- caja de pelicula 1 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/i_am_legend_2_by_diamonddead_art_df1urt4-fullview.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 2 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/zack_snyder_s_knightmare_by_diamonddead_art_dejmnk3-fullview.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 3 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/speed_3_by_diamonddead_art_dejmsvg-fullview.jpg" class="box_movie_img"
+                            alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 4 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/3ae7eb1cfb87d0942980df9ffd20d5dd.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 5 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/61c006474c812.jpeg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 6 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/7855e523e941aa068f54dd87491aeebb.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 7 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/a83b42871bb9af340cf57a36685797a7.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 8 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/a96cad3a03ff9920b18cf0c874e1f004.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 9 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/b2fc6d45bfc300d20a317ac9ae33bfba.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 10 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/zack_snyder_s_knightmare_by_diamonddead_art_dejmnk3-fullview.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 11 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/the_boys___season_3___homelander_by_diamonddead_art_df6rjfm-fullview.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ver_peli">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- grid de las peliculas -->
+    <section class="peliculas contenedor" id="peliculas">
+        <div class="boveda">
+            <h2 class="boveda_titulo">Peliculas</h2>
+        </div>
+
+        <div class="contenido_peliculas">
+            <!-- box 1 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/the_boys___season_3___homelander_by_diamonddead_art_df6rjfm-fullview.jpg"
+                        class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/258fa9a0bed345c537aa7b85ad151fa3.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/screem.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 4 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/margot_robbie_in_pirates_of_the_caribbean_6_by_diamonddead_art_df5n73h-fullview.jpg"
+                        class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 5 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/madame_web.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 6 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/g.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/fast_x___fast_and_furious_meets_x_men_by_diamonddead_art_df40wfv-fullview.jpg"
+                        class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/e563569945bf792fc499e4b56a73a9ce.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/doctor_strange_vs__superior_iron_man_by_diamonddead_art_df04clm-fullview.jpg"
+                        class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/doctor_strange.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/dfcmw1w-c7a68989-46f8-434a-8e35-93d0ae6ee481.jpg" class="box_movie_img"
+                        alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/df0ihz8-e3ef6d08-7cbc-42db-ad5b-1d26f39d53f8.jpg" class="box_movie_img"
+                        alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/deyq3pm-c36e6aa7-3695-4442-b9fb-1ad23c353c97.jpg" class="box_movie_img"
+                        alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/ddw0f53-d4065d41-68c1-49f5-b66f-f8afe9f26a37.jpg" class="box_movie_img"
+                        alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/ddk8779-6d780eaf-b739-43cf-b995-6e2f6843551f.jpg" class="box_movie_img"
+                        alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/d6ccf4335c775ddd13d4fcbf7010b717.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/c74bad6bda8245857974242d613a6ab3.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/a83b42871bb9af340cf57a36685797a7.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/8cb3251b82f1055c204b3d01b18bb83a.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/she_hulk.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/0aa4593a8ca2b90dc3a9688c974bac6c.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/238.png" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/30f5daf392fbf66e5c796bdc0a4ef7d2.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="/img/peliculas/4b5ecde296e53002ac73ce4e07cd2792.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/nightcrawler.jpg" class="box_movie_img" alt="nightcrawler">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/affleck.jpg" class="box_movie_img" alt="affleck">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/andy-apes.jpg" class="box_movie_img" alt="andy-apes">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/blackswan.jpg" class="box_movie_img" alt="blackswan">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/blade-runner.jpg" class="box_movie_img" alt="">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/brad-pitt.jpg" class="box_movie_img" alt="brad-pitt">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/bradley-jennifer.jpg" class="box_movie_img" alt="bradley-jennifer">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/channing.jpg" class="box_movie_img" alt="channing">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/dalmatas.jpg" class="box_movie_img" alt="dalmatas">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/django.jpg" class="box_movie_img" alt="django">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/el-renacido.jpg" class="box_movie_img" alt="el-renacido">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/fake-news.jpg" class="box_movie_img" alt="fake-news">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/gary-oldman.jpg" class="box_movie_img" alt="gary-oldman">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/get-out.jpg" class="box_movie_img" alt="get-out">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/glorious-basterds.jpg" class="box_movie_img" alt="glorious-basterds">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/green_book1.jpg" class="box_movie_img" alt="green_book1">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/harry-potter.jpg" class="box_movie_img" alt="harry-potter">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/hot-water.jpg" class="box_movie_img" alt="hot-water">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/interstellar.jpg" class="box_movie_img" alt="interstellar">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/jorobadojpg.jpg" class="box_movie_img" alt="jorobado">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/la-bella-y-la-bestia.jpg" class="box_movie_img" alt="la-bella-y-la-bestia">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/la_favorita1.jpg" class="box_movie_img" alt="la_favorita1">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/lincoln.jpg" class="box_movie_img" alt="lincoln">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/los-miserables.jpg" class="box_movie_img" alt="los-miserables">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/margot-robbie.jpg" class="box_movie_img" alt="margot-robbie">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/martian.jpg" class="box_movie_img" alt="martian">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/moon.jpg" class="box_movie_img" alt="moon">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/mujer-bonita.jpg" class="box_movie_img" alt="mujer-bonita">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/popeye.jpg" class="box_movie_img" alt="popeye">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/remy-y-linguini-american-hustle.jpg" class="box_movie_img" alt="remy-y-linguini-american-hustle">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/rey-leon.jpg" class="box_movie_img" alt="rey-leon">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/shape-of-water.jpg" class="box_movie_img" alt="shape-of-water">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/syndrome-the-wolf-of-wall-street.jpg" class="box_movie_img" alt="syndrome-the-wolf-of-wall-street">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/the-arrival.jpg" class="box_movie_img" alt="the-arrival">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/slumdog.jpg" class="box_movie_img" alt="slumdog">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/the-bourne.jpg" class="box_movie_img" alt="the-bourne">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/three-billboards.jpg" class="box_movie_img" alt="three-billboards">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/titanicjpg.jpg" class="box_movie_img" alt="titanic">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/tron.jpg" class="box_movie_img" alt="tron">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/wall-e-her.jpg" class="box_movie_img" alt="wall-e-her">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/war-horse.jpg" class="box_movie_img" alt="war-horse">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/watchmen.jpg" class="box_movie_img" alt="watchmen">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/woody-dallas-buyers-club.jpg" class="box_movie_img" alt="woody-dallas-buyers-club">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/tripa-seca.jpg" class="box_movie_img" alt="tripa-seca">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/frog.jpg" class="box_movie_img" alt="frog">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- box 7 -->
+            <div class="swiper-slide">
+                <div class="box_movie">
+                    <img src="img/peliculas/baño.jpg" class="box_movie_img" alt="baño">
+                    <div class="box_titulo">
+                        <h2 class="titulo_movie"> I am lengend 2</h2>
+                        <span class="genero_movie">Zombie</span>
+                        <a href="#" class="watch_home ver_peli">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+    </section>
+
+    <!-- pasar a la siguiente pagina -->
+    <div class="siguiente_pag">
+        <a href="#" class="siguiente_btn">Siguiente</a>
+        <a href="#" class="siguiente_btn"> < Anterior</a>
+        <a href="#" class="siguiente_btn">Siguiente ></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="caja-footer">
+                <!-- logo -->
+                <a href="https://github.com/guillsil/Tp-Proytecto.git" class="logo_footer">
+                    <span class="parte_dorada">Move</span><span class="parte_white">Flix</span>
+                </a>
+                <div class="lorem">
+                    <p>MoveFlix es un servicio de streaming por suscripción que les permite a sus miembros ver series y
+                        películas sin publicidades en un dispositivo con conexión a internet. También puedes descargar
+                        series y películas en un dispositivo con iOS, Android o Windows 10 y verlas sin conexión a
+                        internet.</p>
+                </div>
+            </div>
+            <div class="caja-footer">
+                <h2>Sobre Nosotros</h2>
+                <a href="/index.html"><i class="fa-solid fa-film"></i>MoveFlix</a>
+                <a href="https://github.com/guillsil"><i class="fa-solid fa-user-graduate"></i>Guille</a>
+                <a href="https://github.com/Francicca"><i class="fa-solid fa-user-astronaut"></i>Fran</a>
+                <a href="https://github.com/rafradak"><i class="fa-solid fa-user-secret"></i>Juanma</a>
+            </div>
+
+            <div class="caja-footer">
+                <h2>Contacto</h2>
+                <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i>Email</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>Telefono</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Ubicacion</a>
+            </div>
+
+            <div class="caja-footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i>Facebook</a>
+                <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+
+            </div>
+
+        </div>
+
+        <div class="caja-copy">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b>MoveFlix</b></p>
+        </div>
+    </footer>
+
+
+    <!-- links swiper -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!-- link js -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
