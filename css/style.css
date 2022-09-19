@@ -447,12 +447,14 @@ movie_img{
 
 footer {
     width: 100%;
-    padding: 50px 0px;
+    height: 100%;
+    background: #dda90e;
     background-color: #141414;
 }
 
 .contenedor-footer {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
@@ -519,8 +521,10 @@ footer {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 0px 40px;
+    padding: 0px 0px;
+    margin-bottom: 10px;
 }
+
 
 .caja-copy p {
     margin-top: 20px;
