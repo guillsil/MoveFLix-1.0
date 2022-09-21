@@ -37,3 +37,22 @@ breakpoints: {
   },
   }
 });
+
+
+/* Ver la Pelicula */ 
+let verPelicula = document.querySelector('.ver_peli');
+let video = document.querySelector('.vedeo_contenedor');
+let cont_video = document.querySelector('#cont_video');
+let closeBtn = document.querySelector('.cerrar_video');
+
+verPelicula.onclick = ()  => {
+  video.classList.add('show_peli');
+  cont_video.play();
+};
+
+closeBtn.onclick = ()  => {
+  video.classList.remove('show_peli');
+  cont_video.pause();
+};
+
+

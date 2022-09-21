@@ -332,7 +332,8 @@ header{
     background: rgba(30, 21, 83, 0.6);
     z-index: 400;
 }
-.vedeo_contenedor .show_peli{
+/*    */
+.vedeo_contenedor.show_peli{
     display: flex;
 }
 .caja_video{
@@ -345,27 +346,68 @@ header{
     border-radius: 5px;
 }
 .cerrar_video{
-    top: -3rem;
-    right: 0;
+    top: 1rem;
+    left: 1rem;
     position: absolute;
     font-size: 40px;
     color: #dda90e;
     right: 0;
 }
 
-/* Ver la Pelicula */
-let verPeliBtn = document.querySelector(".ver_peli");{
-    verPeliBtn.onclick = () =>{
-        videoBtn.classList.add(".show_peli")
-    }
-    
+
+/* Info Peli */
+.info_peli{
+    margin-top: 2rem;
 }
-let videoBtn = document.querySelector(".vedeo_contenedor");
-let cerrarBtn = document.querySelector(".cerrar_video");
+.info_peli h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #dda90e;
+}
+.info_peli p{
+    font-size: 1rem;
+    margin: 10px 0;
+    margin: 10px 0;
+    max-width: 600px;
+}
 
-
-
-
+/* Descarga */
+.descargar{
+    max-width: 800px;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    width: 1005;
+    margin-top: 2rem;
+}
+.descargar_peli{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin: 1rem 0;
+    color: #dda90e;
+    justify-content: center;
+   
+}
+.link_descargas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.link_descargas a{
+    background-color: #dda90e;
+    text-align: center;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #080F28;
+}
+.link_descargas a:hover{
+    background-color: #080F28;
+    color: #dda90e;
+    transition: 0.8s all linear;
+}
 
 
 
