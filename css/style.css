@@ -178,8 +178,8 @@ header{
     color: white;
 }
 .home_info p{
-    font-size: 0.95rem;
-    color: #080F28;
+    font-size: 1rem;
+    color: white;
     margin: 10px 0 20px;
 }
 
@@ -200,7 +200,7 @@ header{
 }
 
 .watch_home > span{
-    color: #080F28;
+    color: white;
     font-size: 1rem;
     font-weight: 400;
 }
