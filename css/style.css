@@ -28,7 +28,7 @@ html::-webkit-scrollbar-thumb{
     scroll-behavior: smooth;
 }
 body{
-    background: #141414;
+    background: #080F28;
     color: white;
 }
 section{
@@ -55,7 +55,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #141414;
+    background-color: #080F28;
     z-index: 100;
 }
 /* navbar */
