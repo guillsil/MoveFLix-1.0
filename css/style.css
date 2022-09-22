@@ -675,3 +675,11 @@ footer {
         width: 95%;
     }
 }
+@media (max-width: 991px){
+    .box_movie{
+        height: 300px;
+    }
+    .contenido_peliculas{
+        grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+    }
+}
