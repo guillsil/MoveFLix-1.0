@@ -1,7 +1,7 @@
 /* swiper */
 var swiper = new Swiper('.contenido_popular', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 30,
   autoplay: {
   delay: 5500,
   disableOnInteraction: false,

@@ -472,13 +472,15 @@ header{
 
 /* swiper botones */
 .swiper-button-next::after,
-.swiper-button-prev::after{
+.swiper-button-prev::after,
+.swiper-pagination::after{
     color: #dda90e;
     font-size: 50px !important;
     font-weight: 500;
 }
 .swiper-button-next:hover::after,
-.swiper-button-prev:hover::after{
+.swiper-button-prev:hover::after,
+.swiper-pagination:hover::after{
     color: white;
 } 
 
@@ -488,13 +490,14 @@ header{
 }
 .contenido_peliculas{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
     grid-gap: 1rem;
 }
 .contenido_peliculas .box_movie:hover .box_movie_img{
     transform: scale(1.1);
     transition: 0.5s all linear;
 }
+
 
 /* paginas control */
 .siguiente_pag{
@@ -642,9 +645,33 @@ footer {
 
 
 /* Responsive */
-@media screen and (max-width: 1120px) {
+@media (max-width: 1170px) {
     .navbar{
-        padding: 0 20px;
-        transform: translateY(-1);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        border-top: 1px solid rgba(255, 254, 250, 0.1);
+        transform: translateY(0);
+        justify-content: space-evenly;
+        flex-direction: row;
+        row-gap: 1px;
+        padding: 10px;
+        background: linear-gradient(8deg, rgb(31, 30, 42) 5%, rgba(31, 30, 42, 0.897) 100%);
+    };
+    .list_menu .fa-solid{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1060px){
+    .contenedor{
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+@media (max-width: 1060px){
+    .contenedor{
+        margin: 0 auto;
+        width: 95%;
     }
 }
