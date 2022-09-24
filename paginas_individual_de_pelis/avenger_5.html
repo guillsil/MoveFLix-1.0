@@ -70,8 +70,11 @@
     </header>
     <!-- Contenedor de pelicula -->
     <div class="contendor_peli contenedor">
-        <!-- imagen -->
-        <img src="/img/peliculas/avenger_portada.jpeg" alt="" class="peli_img">
+        <!-- imagen  o video -->
+        <!-- <img src="/img/peliculas/avenger_portada.jpeg" alt="" class="peli_img"> -->
+        <!-- ?autoplay=1&mute=1&controls=0 pegar esto al final del video  y pone la clase class="peli_img" -->
+        <iframe class="peli_img" src="https://www.youtube.com/embed/bqyAOxWJimA?autoplay=1&mute=1&controls=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
         <!-- texto -->
         <div class="peli_texto">
             <h2>Avengers 5</h2>
@@ -100,8 +103,8 @@
         <!-- video contenedor -->
         <div class="vedeo_contenedor">
             <div class="caja_video">
-                <!--Reproductor de Video -->
-                <video src="/img/vedeos_peliculas/avenger_5.mp4" id="cont_video" controls ></video>
+                <!--Reproductor de Video poner aqui el contenido, poner el id id="cont_video" al iframe  -->
+                <iframe src="https://www.youtube.com/embed/bqyAOxWJimA?autoplay=1&controls=0&loop=0&mute=1" id="cont_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!-- boton para cerrar el video -->
                 <i class="fa-solid fa-times-circle cerrar_video"></i>
             </div>

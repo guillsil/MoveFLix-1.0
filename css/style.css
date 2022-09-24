@@ -341,10 +341,10 @@ header{
     border-radius: 5px;
 }
 .cerrar_video{
-    top: 1rem;
-    left: 1rem;
+    top: 0.7rem;
+    left: 0.7rem;
     position: absolute;
-    font-size: 40px;
+    font-size: 50px;
     color: var(--dorado_pag);
     right: 0;
 }
