@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/iconos/logo_ico.png">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <!-- link swiper -->
+
+    <title>MoveFlix</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <div class="bar contenedor">
+            <!-- logo -->
+            <a href="#" class="logo">
+                Move<span>Flix</span>
+            </a>
+            <!-- busqueda -->
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" name="" id="busqueda_input">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- usuario -->
+            <a href="#" class="usuario">
+                <img src="/img/iconos/icon_netflix.png" class="usuario_logo" alt="">
+            </a>
+            <!-- navvar -->
+            <div class="navbar">
+                <a href="#" class="list_menu active">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span class="link_home">Inicio</span>
+                </a>
+
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="link_nav">Series</span>
+                </a>
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="link_nav">Peliculas</span>
+                </a>
+
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="link_nav">Categorias</span>
+                </a>
+
+                <a href="#" class="list_menu">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="link_nav">Tienda</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Movie Container -->
+    <div class="movie_contenedor contenedor">
+        <!-- imagen principal -->
+        <img src="img/series/american-horror-story.jpg" alt="american-horror-story" class="movie_img">
+        <!-- Titulo de la pelicula -->
+        <div class="movie_text">
+            <h2>American Horror Story</h2>
+            <!-- Valoracion: poner estrellas que coresponden segun la pelicula -->
+            <div class="calidad">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- ver trailer -->
+            <a href="#" class="watch_home">
+                <i class="fa-solid fa-play"></i>
+                <span class="watch_home_text">Ver tráiler</span>
+            </a>
+            <br>
+            <div class="trama">
+                <p>
+                    Una serie de historias terroríficas se entrelazan para dar origen al horror, temporada tras temporada las ambientaciones cambian, y también el miedo.
+                </p>
+
+            </div>
+            <!-- generos asociado  a las peliculas -->
+            <div class="generos">
+                <span>Antología - Terror</span>
+                <span>32k</span>
+                <span>4D</span>
+                <span>Coven, Asylum</span>
+                <span>Evan Peters - Sarah Paulson</span>
+            </div>
+
+        </div>
+        <!-- ver pelicula -->
+        <i class="fa-solid fa-circle-play ver_movie"></i>
+        <!-- video trailer -->
+        <!-- <div class="movie_contenedor contenedor">
+            <div class="caja_video">
+                <video id="videos" src="/img/peliculas/pelicula_destacada/trailer_avatar2.mp4" controls></video>
+                <i class="fa-solid fa-x cerrar_video"></i>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Peliculas que te recomendamos -->
+    <section class="polpular contenedor" id="popular">
+        <!-- boveda -->
+        <div class="boveda">
+            <h2 class="boveda_titulo">Series que te recomendamos</h2>
+        </div>
+        <!-- contenido  uso swipeer enlace:https://stackoverflow.com/questions/60715402/swiper-js-autoplay-slider-->
+        <div class="contenido_popular swiper">
+            <div class="swiper-wrapper">
+                <!-- caja de pelicula 1 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/juego-de-tronos.jpg" class="box_movie_img" alt="juego-de-tronos">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Juego de Tronos</h2>
+                            <span class="genero_movie">Drama, Fantasía Medieval</span>
+                            <a href="series1.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 2 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/squid-game.jpg" class="box_movie_img" alt="squid-game">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">El Juego Del Calamar</h2>
+                            <span class="genero_movie">Suspense, Supervivencia</span>
+                            <a href="series2.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 3 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/darth-vader.jpg" class="box_movie_img" alt="darth-vader">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Darth Vader</h2>
+                            <span class="genero_movie">Ciencia Ficción</span>
+                            <a href="series3.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 4 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/baby-yoda.jpg" class="box_movie_img" alt="baby-yoda">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Baby Yoda</h2>
+                            <span class="genero_movie">Ciencia Ficción</span>
+                            <a href="series4.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 5 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/stranger-things.jpg" class="box_movie_img" alt="stranger-things">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Stranger Things</h2>
+                            <span class="genero_movie">Ciencia Ficción, Suspense</span>
+                            <a href="series5.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 6 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/v-vendetta.jpg" class="box_movie_img" alt="v-vendetta">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">La Casa de la Vendetta</h2>
+                            <span class="genero_movie">Ciencia Ficción, Distopía</span>
+                            <a href="series6.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 7 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/blade-runner-2049.jpg" class="box_movie_img" alt="blade-runner-2049">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Blade Runner 2049</h2>
+                            <span class="genero_movie">Mundo post-apocalíptico</span>
+                            <a href="series7.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 8 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/peaky-blinders.jpg" class="box_movie_img" alt="peaky-blinders">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Peaky Blinders</h2>
+                            <span class="genero_movie">Drama histórico, Gángsters</span>
+                            <a href="series8.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 9 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/american-horror-story.jpg" class="box_movie_img" alt="american-horror-story">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">American Horror Story</h2>
+                            <span class="genero_movie">Antología, Terror</span>
+                            <a href="series9.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 10 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/she-hulk.jpg" class="box_movie_img" alt="she-hulk">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">She-Hulk</h2>
+                            <span class="genero_movie">Superhéroes</span>
+                            <a href="series10.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 11 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/series/tortugas-ninja.jpg" class="box_movie_img" alt="tortugas-ninja">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Tortugas Ninja</h2>
+                            <span class="genero_movie">Acción</span>
+                            <a href="series11.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="caja-footer">
+                <!-- logo -->
+                <a href="https://github.com/guillsil/Tp-Proytecto.git" class="logo_footer">
+                    <span class="parte_dorada">Move</span><span class="parte_white">Flix</span>
+                </a>
+                <div class="lorem">
+                    <p>MoveFlix es un servicio de streaming por suscripción que les permite a sus miembros ver series y
+                        películas sin publicidades en un dispositivo con conexión a internet. También puedes descargar
+                        series y películas en un dispositivo con iOS, Android o Windows 10 y verlas sin conexión a
+                        internet.</p>
+                </div>
+            </div>
+            <div class="caja-footer">
+                <h2>Sobre Nosotros</h2>
+                <a href="/index.html"><i class="fa-solid fa-film"></i>MoveFlix</a>
+                <a href="#"><i class="fa-solid fa-user-graduate"></i>Guille</a>
+                <a href="#"><i class="fa-solid fa-user-astronaut"></i>Fran</a>
+                <a href="#"><i class="fa-solid fa-user-secret"></i>Juanma</a>
+            </div>
+
+            <div class="caja-footer">
+                <h2>Contacto</h2>
+                <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i>Email</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>Telefono</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Ubicacion</a>
+            </div>
+
+            <div class="caja-footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i>Facebook</a>
+                <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+
+            </div>
+
+        </div>
+
+        <div class="caja-copy">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b>MoveFlix</b></p>
+        </div>
+    </footer>
+
+
+    <!-- links swiper -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!-- link js -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
