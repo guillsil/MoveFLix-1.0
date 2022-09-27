@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/iconos/logo_ico.png">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <!-- link swiper -->
+
+    <title>MoveFlix-Avengers-5</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <div class="bar contenedor">
+            <!-- logo -->
+            <a href="#" class="logo">
+                Move<span>Flix</span>
+            </a>
+            <!-- busqueda -->
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" name="" id="busqueda_input">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- usuario -->
+            <a href="#" class="usuario">
+                <img src="/img/iconos/icon_netflix.png" class="usuario_logo" alt="">
+            </a>
+            <!-- navvar -->
+            <div class="navbar">
+                <a href="/index.html" class="list_menu active">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span class="link_home">Inicio</span>
+                </a>
+
+                <a href="/series.html" class="list_menu">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="link_nav">Series</span>
+                </a>
+                <a href="/peliculas.html" class="list_menu">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="link_nav">Peliciculas</span>
+                </a>
+
+                <a href="/categorias.html" class="list_menu">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="link_nav">Categorias</span>
+                </a>
+
+                <a href="/tienda.html" class="list_menu">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span class="link_nav">Qatar 2022</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <!-- Contenedor de pelicula -->
+    <div class="contendor_peli contenedor">
+        <!-- imagen  o video -->
+        <!-- <img src="/img/peliculas/avenger_portada.jpeg" alt="" class="peli_img"> -->
+        <!-- ?autoplay=1&controls=0&loop=1&mute=1 pegar esto al final del video  y pone la clase class="peli_img" -->
+        <iframe class="peli_img" src="https://www.youtube.com/embed/bqyAOxWJimA?autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <!-- texto -->
+        <div class="peli_texto">
+            <h2>Avengers 5</h2>
+            <!-- valoracion -->
+            <div class="valoracion">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- etiquetas -->
+            <div class="etiquetas">
+                <span>Ciencia Ficción</span>
+                <span>32k</span>
+                <span>4D</span>
+            </div>
+            <!--boton para ver el  trailer -->
+            <a href="#" class="watch_home">
+                <i class="fa-solid fa-play"></i>
+                <span class="watch_home_text">Ver el Trailer Ahora</span>
+            </a>
+        </div>
+        <!-- reproducir pelicula -->
+        <i class="fa-solid fa-play ver_peli"></i>
+        <!-- video contenedor -->
+        <div class="vedeo_contenedor">
+            <div class="caja_video">
+                <!--Reproductor de Video poner aqui el contenido, poner el id id="cont_video" al iframe  y las variables al final del link del video ?autoplay=0&controls=0&loop=1 -->
+                
+                <iframe id="cont_video" src="https://www.youtube.com/embed/zYAZtS8HGVg?autoplay=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- boton para cerrar el video -->
+                <i class="fa-solid fa-times-circle cerrar_video"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- Info de la Peli -->
+    <div class="info_peli contenedor">
+        <h2>Avengers 5</h2>
+        <p>Los Vengadores fueron un equipo compuesto por personas extraordinarias, individuos alterados u otras características especiales, que se encargaba de proteger la Tierra de las amenazas internacionales o alienígenas.</p>
+    </div>
+    <!-- Descargas -->
+    <div class="descargar">
+        <h2 class="descargar_peli">Descargar Pelicula</h2>
+        <div class="link_descargas">
+            <a href="/img/peliculas/pelicula_destacada/AVATAR 2 EL CAMINO DEL AGUA Tráiler Español Latino Subtitulado (2022).mp4" download="">1080p</a>
+            <a href="/img/peliculas/pelicula_destacada/AVATAR 2 EL CAMINO DEL AGUA Tráiler Español Latino Subtitulado (2022).mp4" download="">3D</a>
+            <a href="/img/peliculas/pelicula_destacada/AVATAR 2 EL CAMINO DEL AGUA Tráiler Español Latino Subtitulado (2022).mp4" download="">4k</a>
+            <a href="/img/peliculas/pelicula_destacada/AVATAR 2 EL CAMINO DEL AGUA Tráiler Español Latino Subtitulado (2022).mp4" download="">8k</a>
+        </div>
+    </div>
+
+
+    <!-- Peliculas que te recomendamos -->
+    <section class="polpular contenedor" id="popular">
+        <!-- boveda -->
+        <div class="boveda">
+            <h2 class="boveda_titulo">Películas que te recomendamos</h2>
+        </div>
+        <!-- contenido  uso swipeer enlace:https://stackoverflow.com/questions/60715402/swiper-js-autoplay-slider-->
+        <div class="contenido_popular swiper">
+            <div class="swiper-wrapper">
+                <!-- caja de pelicula 1 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/constantine.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 2 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/avengers.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 3 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/speed_3_by_diamonddead_art_dejmsvg-fullview.jpg" class="box_movie_img"
+                            alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 4 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/doctor_strange.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 5 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/fast_x.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 6 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/tripa-seca.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 7 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/the-arrival.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 8 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/dalmatas.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 9 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/sony_2.jpeg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 10 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/martian.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- caja de pelicula 11 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/the_boys___season_3___homelander_by_diamonddead_art_df6rjfm-fullview.jpg"
+                            class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie"> I am lengend 2</h2>
+                            <span class="genero_movie">Zombie</span>
+                            <a href="#" class="watch_home">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+     
+
+
+    <!-- links swiper -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!-- link js -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
