@@ -648,7 +648,7 @@ footer {
         bottom: 0;
         right: 0;
         top: auto;
-        border-top: 1px solid rgba(255, 254, 250, 0.1);
+        border-top: 1px solid var(--azul_pag);
         transform: translateY(0);
         justify-content: space-evenly;
         flex-direction: row;
