@@ -196,7 +196,7 @@ header{
 .watch_home{
     align-items: center;
     column-gap: 0.8rem;
-    color: var(--dorado_pag);
+    color: var(--azul_pag);
     display: flex;
 }
 .ver_peli{
@@ -217,7 +217,7 @@ header{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--azul_pag);
+    background: var(--dorado_pag);
 }
 .watch_home .fa-solid:hover{
     background: var(--dorado_pag);
@@ -548,8 +548,8 @@ header{
 footer {
     width: 100%;
     height: 100%;
-    background: #dda90e;
-    background-color: #141414;
+    background: var(--dorado_pag);
+    background-color: var(--azul_pag);
 }
 
 .contenedor-footer {
@@ -570,7 +570,7 @@ footer {
 
 .logo_footer{
     font-weight: 600;
-    color: #dda90e;
+    color: var(--blanco_pag);
     text-transform: uppercase;
     margin: 0 auto 0 0;
     font-size: 2rem;
@@ -578,29 +578,29 @@ footer {
     margin-bottom: 5px;
 }
 .parte_white{
-    color: #ffffff;
+    color: var(--blanco_pag);
 }
 .parte_dorada{
-    color: #dda90e;
+    color: var(--dorado_pag);
 }
 
 .caja-footer .lorem {
     max-width: 350px;
     margin-top: 30px;
     font-weight: 500;
-    color: #ffffffcc;
+    color: var(--gris_claro_pag);
     font-size: 18px;
 }
 
 .caja-footer h2 {
     margin-bottom: 30px;
-    color: #dda90e;
+    color: var(--gris_claro_pag);
     font-weight: 700;
 }
 
 .caja-footer a {
     margin-top: 10px;
-    color: #ffffffcc;
+    color: var(--gris_claro_pag);
     font-weight: 600;
 }
 
@@ -628,13 +628,13 @@ footer {
 
 .caja-copy p {
     margin-top: 20px;
-    color: #dda90e;
+    color: var(--gris_claro_pag);
 }
 
 .caja-copy hr {
     border: none;
     height: 1px;
-    background-color: #dda90e;
+    background-color: var(--gris_claro_pag);
 }
 
 
