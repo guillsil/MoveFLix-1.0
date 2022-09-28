@@ -654,7 +654,7 @@ footer {
         flex-direction: row;
         row-gap: 1px;
         padding: 10px;
-        background: linear-gradient(8deg, rgb(31, 30, 42) 5%, rgba(31, 30, 42, 0.897) 100%);
+        background: var(--azul_pag);
     };
     .list_menu .fa-solid{
         font-size: 1.5rem;
