@@ -42,7 +42,7 @@
             </a>
             <!-- navvar -->
             <div class="navbar">
-                <a href="/index.html" class="list_menu active">
+                <a href="/index.html" class="list_menu ">
                     <i class="fa-solid fa-house-user"></i>
                     <span class="link_home">Inicio</span>
                 </a>
@@ -51,7 +51,7 @@
                     <i class="fa-solid fa-tv"></i>
                     <span class="link_nav">Series</span>
                 </a>
-                <a href="/peliculas.html" class="list_menu">
+                <a href="/peliculas.html" class="list_menu active">
                     <i class="fa-solid fa-film"></i>
                     <span class="link_nav">Peliculas</span>
                 </a>
@@ -72,14 +72,13 @@
     
 
     <!-- Movie Container -->
-    <div class="movie_contenedor contenedor">
-        <!-- imagen principal -->
-        <img src="img/movies/the-batman.jpg" alt="the-batman" class="movie_img">
+    <div class="contendor_peli contenedor">
+        <iframe class="peli_img" src="https://www.youtube.com/embed/fWQrd6cwJ0A?autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- Titulo de la pelicula -->
-        <div class="movie_text">
+        <div class="peli_texto">
             <h2>The Batman</h2>
             <!-- Valoracion: poner estrellas que coresponden segun la pelicula -->
-            <div class="calidad">
+            <div class="valoracion">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -87,48 +86,61 @@
                 <i class="fa-regular fa-star-half-stroke"></i>
             </div>
             <!-- ver trailer -->
-            <a href="#" class="watch_home">
+            <a href="https://www.youtube.com/watch?v=fWQrd6cwJ0A"  target="_blank" class="watch_home">
                 <i class="fa-solid fa-play"></i>
                 <span class="watch_home_text">Ver tráiler</span>
             </a>
             <br>
-            <div class="trama">
+            <div class="descripcion">
                 <p>
                     Luego de dos años de combatir el crimen organizado en ciudad Gótica, Batman deberá recurrir a sus mejores habilidades detectivescas y hacerle frente a los complejos acertijos de un asesino serial.
                 </p>
             </div>
             <!-- generos asociado  a las peliculas -->
-            <div class="generos">
-                <span>Superhéroes - Acción</span>
+            <div class="etiquetas">
+                <span>Superhéroes</span>
+                <span>Acción</span>
                 <span>32k</span>
-                <span>4D</span>
-                <span>Murciélagos, Acertijos</span>
-                <span>Robert Pattinson - Paul Dano</span>
+                <span>Murciélagos</span>
+                <span>Acertijos</span>
+                <span>Robert Pattinson</span>
+                <span>Paul Dano</span>
             </div>
 
         </div>
-        <!-- ver pelicula -->
-        <i class="fa-solid fa-circle-play ver_movie"></i>
-        <!-- video trailer -->
-        <!-- <div class="movie_contenedor contenedor">
+        <!-- reproducir pelicula -->
+        <i class="fa-solid fa-play ver_peli"></i>
+        <!-- video contenedor -->
+        <div class="vedeo_contenedor">
             <div class="caja_video">
-                <video id="videos" src="/img/peliculas/pelicula_destacada/trailer_avatar2.mp4" controls></video>
-                <i class="fa-solid fa-x cerrar_video"></i>
+                <!--Reproductor de Video poner aqui el contenido, poner el id id="cont_video" al iframe  y las variables al final del link del video ?autoplay=0&controls=0&loop=1 -->
+                <iframe src="https://www.youtube.com/embed/Dp1LRbUePJM?autoplay=0&controls=0&loop=1" id="cont_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <!-- boton para cerrar el video -->
+                <i class="fa-solid fa-times-circle cerrar_video"></i>
             </div>
-        </div> -->
+
+        </div>
     </div>
+
+    <!-- Descargas -->
+    <div class="descargar">
+        <h2 class="descargar_peli">Descargar Pelicula</h2>
+        <div class="link_descargas">
+            <a href="https://www.youtube.com/watch?v=Dp1LRbUePJM" download="">1080p</a>
+            <a href="https://www.youtube.com/watch?v=Dp1LRbUePJM" download="">3D</a>
+            <a href="https://www.youtube.com/watch?v=Dp1LRbUePJM" download="">4k</a>
+            <a href="https://www.youtube.com/watch?v=Dp1LRbUePJM" download="">8k</a>
+        </div>
+    </div>
+
 
     <!-- Peliculas que te recomendamos -->
     <section class="polpular contenedor" id="popular">
         <!-- boveda -->
         <div class="boveda">
             <h2 class="boveda_titulo">Películas que te recomendamos</h2>
-            <!-- swipper botones -->
-    
-            <!-- <div class="swiper_botones">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div> -->
+
         </div>
         <!-- contenido  uso swipeer enlace:https://stackoverflow.com/questions/60715402/swiper-js-autoplay-slider-->
         <div class="contenido_popular swiper">
@@ -136,11 +148,11 @@
                 <!-- caja de pelicula 1 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/avatar2.png" class="box_movie_img" alt="avatar2">
+                        <img src="/img/peliculas/avatar.jpg" class="box_movie_img" alt="avatar2">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Avatar 2</h2>
                             <span class="genero_movie">Ciencia Ficción</span>
-                            <a href="movie1.html" class="watch_home ">
+                            <a href="/movies/movie1.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -150,11 +162,11 @@
                 <!-- caja de pelicula 2 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/phoenix.jpg" class="box_movie_img" alt="phoenix">
+                        <img src="/img/peliculas/phoenix.jpg" class="box_movie_img" alt="phoenix">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Joker</h2>
                             <span class="genero_movie">Suspense Psicológico</span>
-                            <a href="movie2.html" class="watch_home ">
+                            <a href="/movies/movie2.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -164,11 +176,11 @@
                 <!-- caja de pelicula 3 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/gollum.jpg" class="box_movie_img" alt="gollum">
+                        <img src="/img/peliculas/gollum.jpg" class="box_movie_img" alt="gollum">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Gollum, El Señor Del Precioso</h2>
                             <span class="genero_movie">Fantasía Épica</span>
-                            <a href="movie3.html" class="watch_home ">
+                            <a href="/movies/movie3.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -178,11 +190,11 @@
                 <!-- caja de pelicula 4 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/wolverine.jpg" class="box_movie_img" alt="wolverine">
+                        <img src="/img/peliculas/wolworine.jpg" class="box_movie_img" alt="wolverine">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Wolverine vs American Sniper</h2>
                             <span class="genero_movie">Superhéroes - Acción</span>
-                            <a href="movie4.html" class="watch_home ">
+                            <a href="/movies/movie4.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -192,11 +204,11 @@
                 <!-- caja de pelicula 5 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/mad-max-fury-road.jpg" class="box_movie_img" alt="mad-max-fury-road">
+                        <img src="/img/peliculas/mad-max-fury-road.jpg" class="box_movie_img" alt="mad-max-fury-road">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Mad Max: Valhalla</h2>
                             <span class="genero_movie">Ciencia Ficción Apocalíptica</span>
-                            <a href="movie5.html" class="watch_home ">
+                            <a href="/movies/movie5.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -206,11 +218,11 @@
                 <!-- caja de pelicula 6 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/hydra-capitan-america.jpg" class="box_movie_img" alt="hydra-capitan-america">
+                        <img src="/img/peliculas/hydra-capitan-america.jpg" class="box_movie_img" alt="hydra-capitan-america">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Capitán América: Hydra</h2>
                             <span class="genero_movie">Superhéroes - Acción</span>
-                            <a href="movie6.html" class="watch_home ">
+                            <a href="/movies/movie6.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -220,11 +232,11 @@
                 <!-- caja de pelicula 7 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/the-batman.jpg" class="box_movie_img" alt="the-batman">
+                        <img src="/img/peliculas/the-batman.jpg" class="box_movie_img" alt="the-batman">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">The Batman</h2>
                             <span class="genero_movie">Superhéroes - Acción</span>
-                            <a href="movie7.html" class="watch_home ">
+                            <a href="/movies/movie7.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -234,11 +246,11 @@
                 <!-- caja de pelicula 8 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/riddick-toretto.jpg" class="box_movie_img" alt="riddick-toretto">
+                        <img src="/img/peliculas/riddick-toretto.jpg" class="box_movie_img" alt="riddick-toretto">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Las Crónicas de Toretto</h2>
                             <span class="genero_movie">Acción</span>
-                            <a href="movie8.html" class="watch_home ">
+                            <a href="/movies/movie8.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -248,11 +260,11 @@
                 <!-- caja de pelicula 9 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/the-matrix.jpg" class="box_movie_img" alt="the-matrix">
+                        <img src="/img/peliculas/the-matrix.jpg" class="box_movie_img" alt="the-matrix">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">The Matrix 4</h2>
                             <span class="genero_movie">Ciencia Ficción - Acción</span>
-                            <a href="movie9.html" class="watch_home ">
+                            <a href="/movies/movie9.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -262,11 +274,11 @@
                 <!-- caja de pelicula 10 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/heisenberg-thanos.jpg" class="box_movie_img" alt="heisenberg-thanos">
+                        <img src="/img/peliculas/heisenberg-thanos.jpg" class="box_movie_img" alt="heisenberg-thanos">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Walter White es... ¡Heisenberg Thanos!</h2>
                             <span class="genero_movie">Acción</span>
-                            <a href="movie10.html" class="watch_home ">
+                            <a href="/movies/movie10.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -276,11 +288,11 @@
                 <!-- caja de pelicula 11 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/movies/indiana-rock.jpg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/indiana-rock.jpg" class="box_movie_img" alt="">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Indiana "The Rock" Jones</h2>
                             <span class="genero_movie">Aventura</span>
-                            <a href="movie11.html" class="watch_home ">
+                            <a href="/movies/movie11.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
