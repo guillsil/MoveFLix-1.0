@@ -41,7 +41,7 @@
             </a>
             <!-- navvar -->
             <div class="navbar">
-                <a href="/index.html" class="list_menu active">
+                <a href="/index.html" class="list_menu">
                     <i class="fa-solid fa-house-user"></i>
                     <span class="link_home">Inicio</span>
                 </a>
@@ -50,7 +50,7 @@
                     <i class="fa-solid fa-tv"></i>
                     <span class="link_nav">Series</span>
                 </a>
-                <a href="/peliculas.html" class="list_menu">
+                <a href="/peliculas.html" class="list_menu active">
                     <i class="fa-solid fa-film"></i>
                     <span class="link_nav">Peliculas</span>
                 </a>
@@ -72,7 +72,8 @@
     <!-- Contenedor de pelicula -->
     <div class="contendor_peli contenedor">
         <!-- imagen  o video -->
-        <!-- ?autoplay=1&controls=0&loop=1&mute=1 pegar esto al final del video  y pone la clase class="peli_img" a la imagen o iframe-->
+        <!-- <img src="/img/peliculas/avenger_portada.jpeg" alt="" class="peli_img"> -->
+        <!-- ?autoplay=1&controls=0&loop=1&mute=1 pegar esto al final del link del video  y pone la clase class="peli_img" -->
         <iframe class="peli_img" src="https://www.youtube.com/embed/QC5eaMNaHLs?autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         <!-- texto -->
@@ -86,6 +87,18 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
+            <!--boton para ver el  trailer -->
+            <!-- poner el atributo target="_blank" para que sea se se habra en otra pagina -->
+            <a href="https://www.youtube.com/watch?v=QC5eaMNaHLs" target="_blank"  class="watch_home">
+                <i class="fa-solid fa-play"></i>
+                <span class="watch_home_text">Ver el Trailer Ahora</span>
+            </a>
+            <br>
+            <div class="descripcion">
+                <p>
+                    Jake Sully vive con su nueva familia en el planeta de Pandora. Cuando una amenaza conocida regresa, Jake debe trabajar con Neytiri y el ejército de la raza na'vi para proteger su planeta.
+                </p>
+            </div>
             <!-- etiquetas -->
             <div class="etiquetas">
                 <span>Ciencia Ficción</span>
@@ -94,12 +107,7 @@
                 <span>Spilberg</span>
 
             </div>
-            <!--boton para ver el  trailer -->
-            <!-- Enlace para ver EL TRAILER DESDE YOUTUBE -->
-            <a href="https://www.youtube.com/watch?v=QC5eaMNaHLs" class="watch_home">
-                <i class="fa-solid fa-play"></i>
-                <span class="watch_home_text">Ver el Trailer Ahora</span>
-            </a>
+            
         </div>
         <!-- reproducir pelicula -->
         <i class="fa-solid fa-play ver_peli"></i>
@@ -107,7 +115,7 @@
         <div class="vedeo_contenedor">
             <div class="caja_video">
                 <!--Reproductor de Video poner aqui el contenido, poner el id id="cont_video" al iframe  y las variables al final del link del video ?autoplay=0&controls=0&loop=1 -->
-                <iframe id="cont_video" src="https://www.youtube.com/embed/aEvItEpMly8?autoplay=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="cont_video" src="https://www.youtube.com/embed/AdDHTDp6lU4?autoplay=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!-- boton para cerrar el video -->
                 <i class="fa-solid fa-times-circle cerrar_video"></i>
             </div>
@@ -118,19 +126,19 @@
     <div class="descargar">
         <h2 class="descargar_peli">Descargar Pelicula</h2>
         <div class="link_descargas">
-            <a href="https://www.youtube.com/embed/aEvItEpMly8" download="">1080p</a>
-            <a href="https://www.youtube.com/embed/aEvItEpMly8" download="">3D</a>
-            <a href="https://www.youtube.com/embed/aEvItEpMly8" download="">4k</a>
-            <a href="https://www.youtube.com/embed/aEvItEpMly8" download="">8k</a>
+            <a href="https://www.youtube.com/watch?v=AdDHTDp6lU4" download="">1080p</a>
+            <a href="https://www.youtube.com/watch?v=AdDHTDp6lU4" download="">3D</a>
+            <a href="https://www.youtube.com/watch?v=AdDHTDp6lU4" download="">4k</a>
+            <a href="https://www.youtube.com/watch?v=AdDHTDp6lU4" download="">8k</a>
         </div>
     </div>
-
 
     <!-- Peliculas que te recomendamos -->
     <section class="polpular contenedor" id="popular">
         <!-- boveda -->
         <div class="boveda">
             <h2 class="boveda_titulo">Películas que te recomendamos</h2>
+
         </div>
         <!-- contenido  uso swipeer enlace:https://stackoverflow.com/questions/60715402/swiper-js-autoplay-slider-->
         <div class="contenido_popular swiper">
@@ -138,156 +146,151 @@
                 <!-- caja de pelicula 1 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/constantine.jpg"
-                            class="box_movie_img" alt="">
+                        <img src="/img/peliculas/avatar.jpg" class="box_movie_img" alt="avatar2">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie">I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Avatar 2</h2>
+                            <span class="genero_movie">Ciencia Ficción</span>
+                            <a href="/movies/movie1.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 2 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/avengers.jpg"
-                            class="box_movie_img" alt="">
+                        <img src="/img/peliculas/phoenix.jpg" class="box_movie_img" alt="phoenix">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Joker</h2>
+                            <span class="genero_movie">Suspense Psicológico</span>
+                            <a href="/movies/movie2.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 3 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/speed_3_by_diamonddead_art_dejmsvg-fullview.jpg" class="box_movie_img"
-                            alt="">
+                        <img src="/img/peliculas/gollum.jpg" class="box_movie_img" alt="gollum">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Gollum, El Señor Del Precioso</h2>
+                            <span class="genero_movie">Fantasía Épica</span>
+                            <a href="/movies/movie3.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 4 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/doctor_strange.jpg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/wolworine.jpg" class="box_movie_img" alt="wolverine">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Wolverine vs American Sniper</h2>
+                            <span class="genero_movie">Superhéroes - Acción</span>
+                            <a href="/movies/movie4.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 5 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/fast_x.jpg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/mad-max-fury-road.jpg" class="box_movie_img" alt="mad-max-fury-road">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Mad Max: Valhalla</h2>
+                            <span class="genero_movie">Ciencia Ficción Apocalíptica</span>
+                            <a href="/movies/movie5.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 6 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/tripa-seca.jpg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/hydra-capitan-america.jpg" class="box_movie_img" alt="hydra-capitan-america">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Capitán América: Hydra</h2>
+                            <span class="genero_movie">Superhéroes - Acción</span>
+                            <a href="/movies/movie6.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 7 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/the-arrival.jpg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/the-batman.jpg" class="box_movie_img" alt="the-batman">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">The Batman</h2>
+                            <span class="genero_movie">Superhéroes - Acción</span>
+                            <a href="/movies/movie7.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 8 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/dalmatas.jpg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/riddick-toretto.jpg" class="box_movie_img" alt="riddick-toretto">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home ">
+                            <h2 class="titulo_movie">Las Crónicas de Toretto</h2>
+                            <span class="genero_movie">Acción</span>
+                            <a href="/movies/movie8.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 9 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/sony_2.jpeg" class="box_movie_img" alt="">
+                        <img src="/img/peliculas/the-matrix.jpg" class="box_movie_img" alt="the-matrix">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">The Matrix 4</h2>
+                            <span class="genero_movie">Ciencia Ficción - Acción</span>
+                            <a href="/movies/movie9.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 10 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/martian.jpg"
-                            class="box_movie_img" alt="">
+                        <img src="/img/peliculas/heisenberg-thanos.jpg" class="box_movie_img" alt="heisenberg-thanos">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Walter White es... ¡Heisenberg Thanos!</h2>
+                            <span class="genero_movie">Acción</span>
+                            <a href="/movies/movie10.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- caja de pelicula 11 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/peliculas/the_boys___season_3___homelander_by_diamonddead_art_df6rjfm-fullview.jpg"
-                            class="box_movie_img" alt="">
+                        <img src="/img/peliculas/indiana-rock.jpg" class="box_movie_img" alt="">
                         <div class="box_titulo">
-                            <h2 class="titulo_movie"> I am lengend 2</h2>
-                            <span class="genero_movie">Zombie</span>
-                            <a href="#" class="watch_home">
+                            <h2 class="titulo_movie">Indiana "The Rock" Jones</h2>
+                            <span class="genero_movie">Aventura</span>
+                            <a href="/movies/movie11.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -301,6 +304,56 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="caja-footer">
+                <!-- logo -->
+                <a href="https://github.com/guillsil/Tp-Proytecto.git" class="logo_footer">
+                    <span class="parte_dorada">Move</span><span class="parte_white">Flix</span>
+                </a>
+                <div class="lorem">
+                    <p>MoveFlix es un servicio de streaming por suscripción que les permite a sus miembros ver series y
+                        películas sin publicidades en un dispositivo con conexión a internet. También puedes descargar
+                        series y películas en un dispositivo con iOS, Android o Windows 10 y verlas sin conexión a
+                        internet.</p>
+                </div>
+            </div>
+            <div class="caja-footer">
+                <h2>Sobre Nosotros</h2>
+                <a href="/index.html"><i class="fa-solid fa-film"></i>MoveFlix</a>
+                <a href="#"><i class="fa-solid fa-user-graduate"></i>Guille</a>
+                <a href="#"><i class="fa-solid fa-user-astronaut"></i>Fran</a>
+                <a href="#"><i class="fa-solid fa-user-secret"></i>Juanma</a>
+            </div>
+
+            <div class="caja-footer">
+                <h2>Contacto</h2>
+                <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i>Email</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>Telefono</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Ubicacion</a>
+            </div>
+
+            <div class="caja-footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i>Facebook</a>
+                <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+
+            </div>
+
+        </div>
+
+        <div class="caja-copy">
+            <hr>
+            <p>Todos los derechos reservados © 2022 <b>MoveFlix</b></p>
+        </div>
+    </footer>
+
+    
      
 
 

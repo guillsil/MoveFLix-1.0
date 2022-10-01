@@ -223,6 +223,11 @@ header{
     background: var(--dorado_pag);
     transition: 2s all linear;
 }
+.watch_home_text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dorado_pag);
+}
 
 
 
@@ -260,7 +265,7 @@ header{
     
 }
 .valoracion{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: flex;
     column-gap: 2px;
     align-items: center;
@@ -273,10 +278,13 @@ header{
     align-items: center;
     margin: 1rem 0;
     column-gap: 7px;
+    font-size: 1rem;
 }
 .etiquetas span{
-    padding: 0 5px;
-    background: rgba(223, 186, 18, 0.479);
+    padding: 0 10px;
+    font-size: 1.2rem;
+    background: var(--dorado_pag);
+    color: #080F28;
 }
 .ver_peli{
     align-items: center;
@@ -293,6 +301,12 @@ header{
     color: var(--dorado_pag);
     animation: animate 2s linear infinite;
 }
+.descripcion{
+    font-size: 1.1rem;
+    color: var(--blanco_pag);
+    margin: 1rem 0;
+}
+
 /* keyframes para los boteones de la pag principal */
 @keyframes animate{
     0%{
