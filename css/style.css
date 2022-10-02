@@ -511,8 +511,8 @@ header{
 }
 .contenido_peliculas{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    grid-gap: 1.5rem;
 }
 .contenido_peliculas .box_movie:hover .box_movie_img{
     transform: scale(1.1);
@@ -656,6 +656,7 @@ footer {
 
 
 /* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
+
 @media (max-width: 1170px) {
     .navbar{
         left: 0;
@@ -685,7 +686,7 @@ footer {
         height: 340px;
     }
     .contenido_peliculas{
-        grid-template-columns: repeat(auto-fit, minmax(890px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
     }
 }
 @media (max-width: 888px){
@@ -760,5 +761,83 @@ footer {
       }
 }
 @media (max-width: 514px){
-
+    .home {
+        min-height: 380px;
+    }
+    .boveda {
+        padding: 2px 14px;
+      }
+    .boveda_titulo {
+        font-size: 1rem;
+      }
+    .peli_texto {
+        padding: 20px;
+      }
+    .ver_peli {
+        bottom: 4rem;
+      }
+    .caja_video {
+        width: 94%;
+      }
+    .valoracion {
+        font-size: 1rem;
+      }
+    .watch_home .fa-solid {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+      }
+}
+@media (max-width: 408){
+    *{
+        scroll-padding-top: 5rem;
+    }
+    .bar{
+        display: grid;
+        row-gap: 5px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .busqueda {
+        max-width: 100%;
+        width: 100%;
+        order: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 50%;
+    }
+    .home,
+    .contendor_peli {
+        margin-top: 7rem !important;
+    }
+    .box_movie {
+        height: 300px;
+    }
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+@media (max-width: 370){
+    .home {
+        min-height: 300px;
+    }
+    .box_movie {
+        height: 285px;
+      }
+    .navbar {
+        padding: 10px;
+        justify-content: space-around;
+      }
+    .busqueda {
+        width: 50%;
+    }
+    .list_menu .fa-solid {
+        font-size: 1.4em;
+    }
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+      }
+    
 }

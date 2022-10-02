@@ -1,7 +1,7 @@
 /* swiper */
 var swiper = new Swiper('.contenido_popular', {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 10,
   autoplay: {
   delay: 5500,
   disableOnInteraction: false,
@@ -14,6 +14,7 @@ navigation: {
 nextEl: '.swiper-button-next',
 prevEl: '.swiper-button-prev',
 },
+
 breakpoints: {
   280: {
     slidesPerView: 1,
