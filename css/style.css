@@ -655,7 +655,7 @@ footer {
 
 
 
-/* Responsive */
+/* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
 @media (max-width: 1170px) {
     .navbar{
         left: 0;
@@ -682,9 +682,83 @@ footer {
 }
 @media (max-width: 991px){
     .box_movie{
-        height: 300px;
+        height: 340px;
     }
     .contenido_peliculas{
-        grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(890px, 1fr));
     }
+}
+@media (max-width: 888px){
+    .bar{
+        padding: 14px 0;
+    }
+    .home{
+        min-height: 440px;
+        margin-top: 4rem !important;
+    }
+    .home_info {
+        padding-left: 25px;
+    }
+    .home_titulo {
+        font-size: 1.6rem;
+    }
+    .watch_home > span {
+        font-size: 0.9rem; 
+    }
+    .titulo_movie {
+        font-size: 1rem;
+        padding-right: 30px;
+    }
+    .contendor_peli {
+        min-height: 440px;
+        margin-top: 4rem !important;
+    }
+    .ver_peli {
+        bottom: 14rem;
+        right: 4rem;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+
+      }
+}
+@media (max-width: 767px){
+    .bar{
+        padding: 11px 0;
+    }
+    .logo {
+        
+        font-size: 1.2rem;
+      }
+    .section{
+        padding: 2rem 0;
+    }
+    .home_img {
+        object-position: left;
+      }
+    .genero_movie{
+        font-size: 0.875rem;
+        margin-top: 2px;
+    }
+    .etiquetas span,
+    .descripcion p {
+        font-size: 0.875rem;
+    }
+    p{
+        font-size: 0.875rem;
+    }
+    .peli_texto h2 {
+        font-size: 1.3rem;
+      }
+
+    .ver_peli {
+        bottom: 10rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+      }
+}
+@media (max-width: 514px){
+
 }
