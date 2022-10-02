@@ -799,12 +799,7 @@ footer {
         grid-template-columns: 1fr;
     }
     .busqueda {
-        max-width: 100%;
-        width: 100%;
-        order: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        width: 50%;
+        max-width: 200px;
     }
     .home,
     .contendor_peli {
@@ -839,5 +834,7 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1rem;
       }
+}
+@media (max-width: 300){
     
 }
