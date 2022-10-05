@@ -835,6 +835,14 @@ footer {
         gap: 1rem;
       }
 }
-@media (max-width: 300){
-    
+@media (max-width: 320){
+    .busqueda {
+        max-width: 120px;
+      }
+    .box_movie {
+        height: 300px;
+      }
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      }
 }
