@@ -74,14 +74,24 @@ header{
     cursor: pointer;
 }
 /* loguito */
-.logo{
+.logo1{
     font-weight: 600;
     color: var(--dorado_pag);
     text-transform: uppercase;
     margin: 0 auto 0 0;
     font-size: 1.4rem;
 }
-.logo span{
+.logo1 span{
+    color: var(--blanco_pag);
+}
+.logo2{
+    font-weight: 600;
+    color: var(--dorado_pag);
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    font-size: 1.4rem;
+}
+.logo2 span{
     color: var(--blanco_pag);
 }
 /* buscador */
@@ -155,16 +165,95 @@ header{
     font-size: 0.7em;
 }
 
+.nav{
+    background: var(--azul_pag);
+    height: 80px;
+    color: var(--dorado_pag);
+}
+.logo2{
+    font-weight: 600;
+    color: var(--dorado_pag);
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    font-size: 1.5rem;
+}
+.logo2 span{
+    color: var(--blanco_pag);
+}
+
+.nav_contenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+}
+
+/*menu hamburguesa*/
+
+.nav{
+    background: var(--azul_pag);
+    height: 80px;
+    color: var(--blanco_pag);
+}
+.nav-menu, a, span{
+    color: var(--blanco_pag);
+}
+.nav-menu, a, fa-solid{
+    color: var(--dorado_pag);
+}
+
+.nav_label{
+    color: var(--dorado_pag);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.nav_items{
+    text-decoration: none;
+}
+.nav_items:hover{
+    color: var(--gris_pag);
+    transition: 0.3s all linear;
+}
+.nav-menu, a, span:hover{
+    color: var(--dorado_pag);
+    transition: 0.5s all linear;
+}
+.logo1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo1:hover{
+    color: var(--blanco_pag);
+    transition: 0.3s all linear;
+}     
+
+.nav_contenedor{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 1.3rem auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_imput:checked + nav-menu{
+    background: var(--azul_pag);
+}
+.nav_label, .nav_imput{
+    display: none;
+}
+.nav-menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    font-size: 1rem;
+}
 
 
 /*menu hamburguesa*/
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
+/*
 
 nav {
     height: 100px;
@@ -266,7 +355,7 @@ nav {
         font-size: 12px;
     }
 }
-
+ */
 
 
 /* Home */
@@ -766,8 +855,13 @@ footer {
     background-color: var(--gris_claro_pag);
 }
 
+@media (max-width: 1400px){
+    .nav{
+        display: none;
+    }
+}
 
-
+ 
 
 
 /* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
@@ -784,24 +878,36 @@ footer {
         row-gap: 1px;
         padding: 10px;
         background: var(--azul_pag);
-    };
-    .list_menu .fa-solid{
-        font-size: 1.5rem;
     }
+    .list_menu .fa-solid{
+        font-size: 1.2rem;
+    }
+    .nav {
+        display: none;
+      }
+    .nav{
+        display: none;
+      }
 }
 @media (max-width: 1060px){
     .contenedor{
         margin: 0 auto;
         width: 95%;
     }
+    .nav{
+        display: none;
+      }
 }
 @media (max-width: 991px){
     .box_movie{
         height: 340px;
     }
-    .contenido_peliculas{
-        grid-template-columns: repeat(auto-fit, minmax(890px, 1fr));
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .nav{
+        display: none;
+      }
 }
 @media (max-width: 888px){
     .bar{
@@ -834,7 +940,12 @@ footer {
         width: 50px;
         height: 50px;
         font-size: 25px;
-
+      }
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .nav{
+        display: none;
       }
 }
 @media (max-width: 767px){
@@ -856,9 +967,10 @@ footer {
         margin-top: 2px;
     }
     .etiquetas span,
-    .descripcion p {
-        font-size: 0.875rem;
-    }
+    .descripcion {
+        font-size: 1.1rem;
+        margin: 2rem 0;
+      }
     p{
         font-size: 0.875rem;
     }
@@ -873,7 +985,66 @@ footer {
         height: 45px;
         font-size: 20px;
       }
-}
-@media (max-width: 514px){
+    .busqueda {
+        display: none;
+      }
+    .usuario {
+        display: none;
+      }
+    .logo2 {
+        display: none;
+      }
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      }
+    .boveda {
+        display: flex;
+        padding: 3px 7px;
+        margin-bottom: 0.5rem;
+        margin-top: -1.5rem;
+      }
+    .nav{
+        display: flex;
+      }
+    .navbar {
+        display: none;
+        }
+    }
 
+@media (max-width: 700px){
+    /* aca arreglar el menu hamburguesa */
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: var(--azul_pag);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav_imput:checked + nav-menu{
+        clip-path: circle(100% at center);
+    }
+
+    
+}
+@media (max-width: 575px){
+}
+@media (max-width: 425px){
+
+}
+@media (max-width: 320px){
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+        gap: 0.3rem;
+      }
 }
