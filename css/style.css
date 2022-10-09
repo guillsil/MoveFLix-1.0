@@ -1038,7 +1038,7 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.6rem; 
-        margin-left: 550px;
+        margin-left: 10px;
     }
     .nav-menu li {
         line-height: 130px;
@@ -1053,7 +1053,7 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 490px;
+        margin-left: 10px;
     }
     .logo1 {
         font-size: 1.7rem;
@@ -1065,7 +1065,7 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 370px;
+        margin-left: 10px;
         justify-content: space-between;
     }
     .logo1 {
@@ -1091,21 +1091,21 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 1rem;
+        margin-left: 10px;
     }
 }
 @media (max-width: 400px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 1rem;
+        margin-left: 10px;
     }
 }
 @media (max-width: 380px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 1rem;
+        margin-left: 10px;
     }
 }
 @media (max-width: 320px){
@@ -1133,7 +1133,7 @@ footer {
       .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 1rem;
+        margin-left: 10px;
     }
 }
 
@@ -1141,6 +1141,6 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 1rem;
+        margin-left: 10px;
     }
 }
