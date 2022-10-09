@@ -1144,3 +1144,24 @@ footer {
         margin-left: 10px;
     }
 }
+@media (max-width: 280px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 10px;
+    }
+}
+@media (max-width: 260px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 10px;
+    }
+}
+@media (max-width: 240px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 10px;
+    }
+}
