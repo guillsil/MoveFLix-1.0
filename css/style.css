@@ -1091,21 +1091,21 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 100px;
+        margin-left: 1rem;
     }
 }
 @media (max-width: 400px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 100px;
+        margin-left: 1rem;
     }
 }
 @media (max-width: 380px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 100px;
+        margin-left: 1rem;
     }
 }
 @media (max-width: 320px){
@@ -1133,7 +1133,7 @@ footer {
       .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 30px;
+        margin-left: 1rem;
     }
 }
 
@@ -1141,6 +1141,6 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 20px;
+        margin-left: 1rem;
     }
 }
