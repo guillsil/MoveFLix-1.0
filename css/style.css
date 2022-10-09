@@ -191,6 +191,9 @@ header{
 
 /*menu hamburguesa*/
 
+
+
+/* 
 .nav{
     background: var(--azul_pag);
     height: 80px;
@@ -250,22 +253,38 @@ header{
     gap: 2rem;
     font-size: 1rem;
 }
+ */
 
-
-/*menu hamburguesa*/
-/*
-
-nav {
+/* menu hamburguesa */
+nav{
     height: 100px;
     width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.logo1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo1:hover{
+    color: var(--blanco_pag);
+    transition: 0.3s all linear;
+} 
+.nav-menu, a, span:hover{
+    color: var(--azul_pag);
+    transition: 0.3s all linear;
+}
+.nav-menu, a, span{
+    color: var(--blanco_pag);
+}
+.nav-menu, a, fa-solid{
+    color: var(--dorado_pag);
+}
 
 .bar-btn{
     font-size: 25px;
-    color: #dda90e;
+    color: var(--dorado_pag);
     margin-left: 20px;
     cursor: pointer;
 }
@@ -275,7 +294,7 @@ nav {
     width: 100%;
     height: 0vh;
     top: 100px;
-    background: #0c0b20;
+    background: var(--dorado_pag);
     text-align: center;
     transition: all .5s;
 }
@@ -289,14 +308,18 @@ nav {
 
 
 .nav-menu li a{
-    color: #fff;
-    font-size: 16px;
+    color: var(--azul_pag);
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: var(--celeste_pag);
+    transition: .3s;
+}
 .nav-menu li a:hover{
-    color: #dda90e;
+    color: var(--azul_pag);
     transition: .2s;
 }
 
@@ -312,12 +335,7 @@ nav {
     display: block;
 }
 
-@media screen and (max-width: 769px){
-    .navbar{
-        display: none;
-    }
-}
-
+/* 
 @media screen and (min-width: 769px){
     nav{
         display: none;
@@ -354,8 +372,8 @@ nav {
     .nav-menu li a{
         font-size: 12px;
     }
-}
- */
+} */
+
 
 
 /* Home */
@@ -857,7 +875,7 @@ footer {
 }
 
 @media (max-width: 1400px){
-    .nav{
+    nav{
         display: none;
     }
 }
@@ -883,10 +901,7 @@ footer {
     .list_menu .fa-solid{
         font-size: 1.2rem;
     }
-    .nav {
-        display: none;
-      }
-    .nav{
+    nav {
         display: none;
       }
 }
@@ -895,7 +910,7 @@ footer {
         margin: 0 auto;
         width: 95%;
     }
-    .nav{
+    nav{
         display: none;
       }
 }
@@ -906,7 +921,7 @@ footer {
     .contenido_peliculas {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .nav{
+    nav{
         display: none;
       }
 }
@@ -945,7 +960,7 @@ footer {
     .contenido_peliculas {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .nav{
+    nav{
         display: none;
       }
 }
@@ -1004,43 +1019,80 @@ footer {
         margin-bottom: 0.5rem;
         margin-top: -1.5rem;
       }
-    .nav{
-        display: flex;
-      }
     .navbar {
         display: none;
-        }
     }
-
-@media (max-width: 700px){
-    /* aca arreglar el menu hamburguesa */
+    nav{
+        display: flex;    
+    }
+    .logo1 {
+        font-size: 1.7rem;
+        margin-top: 1.8rem;
+        margin-left: 1rem;
+      }
+    .nav-menu li {
+        line-height: 30px;
+        margin: 0px -100px;
+    
+      }
     .nav_label{
-        display: block;
-        cursor: pointer;
+        margin-top: 2rem;
+        font-size: 1.6rem; 
+        margin-left: 550px;
     }
-    .nav-menu{
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background: var(--azul_pag);
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-    }
-    .nav_imput:checked + nav-menu{
-        clip-path: circle(100% at center);
-    }
-
+    .nav-menu li {
+        line-height: 130px;
+        margin: 0px -100px;
+      }
+    
+    
     
 }
+
+@media (max-width: 700px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 490px;
+    }
+    .logo1 {
+        font-size: 1.7rem;
+        margin-top: 1.9rem;
+        margin-left: 1rem;
+      }
+}
 @media (max-width: 575px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 370px;
+        justify-content: space-between;
+    }
+    .logo1 {
+        font-size: 1.7rem;
+        margin-top: 1.9rem;
+        margin-left: 1rem;
+      }
+    .boveda {
+        display: flex;
+        padding: 3px 7px;
+        margin-bottom: 0.5rem;
+        margin-top: -4.5rem;
+      }
+    .home {
+        min-height: 440px;
+        margin-top: 6rem !important;
+        margin-bottom: 2.5rem;
+      }
+    
+    
 }
 @media (max-width: 425px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 220px;
+    }
 
 }
 @media (max-width: 320px){
@@ -1048,4 +1100,26 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
         gap: 0.3rem;
       }
+    .navbar{
+        display: none;
+    }
+    .bar {
+        padding: 0px 0;
+      }
+    .logo1{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-left: 0.4rem;
+        margin-right: 7rem;
+    }
+    .bar-btn {
+        font-size: 27px;
+        margin-left: 16px;
+        margin-top: 1rem;
+      }
+      .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 30px;
+    }
 }
