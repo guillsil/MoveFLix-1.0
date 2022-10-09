@@ -1091,21 +1091,21 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 220px;
+        margin-left: 100px;
     }
 }
 @media (max-width: 400px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 180px;
+        margin-left: 100px;
     }
 }
 @media (max-width: 380px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 180px;
+        margin-left: 100px;
     }
 }
 @media (max-width: 320px){
