@@ -1123,3 +1123,10 @@ footer {
         margin-left: 30px;
     }
 }
+@media (max-width: 300px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 20px;
+    }
+}
