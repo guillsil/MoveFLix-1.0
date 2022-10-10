@@ -1128,23 +1128,47 @@ footer {
         padding: 0px 0;
       }
     .logo1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-top: 2rem;
         margin-left: 0.4rem;
-        margin-right: 7rem;
     }
-    .bar-btn {
-        font-size: 27px;
-        margin-left: 16px;
-        margin-top: 1rem;
-      }
       .nav_label{
-        margin-top: 2rem;
+        margin-top: 2.1rem;
         font-size: 1.7rem; 
     }
+    /* pag individual */
+    .etiquetas {
+        margin: -5rem -4rem;
+        column-gap: 7px;
+        font-size: 8rem;
+      }
+    .watch_home {
+        display: none;
+      }
+    .peli_texto h2 {
+        font-size: 1.2rem;
+        margin: -1rem -4rem;
+      }
+    .valoracion {
+        font-size: 1.2rem;
+        display: flex;
+        column-gap: 2px;
+        align-items: center;
+        column-gap: 0.5rem;
+        margin: 14.5rem -4rem 1rem;
+        color: var(--dorado_pag);
+      }
+    .ver_peli {
+        bottom: 12rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
 }
 
-@media screen and (max-width: 320px){
+
+@media screen and (max-width: 280px){
     .contenido_peliculas {
         grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
         gap: 0.3rem;
@@ -1159,44 +1183,12 @@ footer {
         font-size: 1.5rem;
         margin-top: 2rem;
         margin-left: 0.4rem;
-        margin-right: 7rem;
     }
-    .bar-btn {
-        font-size: 27px;
-        margin-left: 16px;
-        margin-top: 1rem;
-      }
-      .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
+    
+    .nav_label{
+        margin-top: 2.1rem;
+        font-size: 1.5rem; 
     }
 }
-/* @media screen and (max-width: 280px){
-    .contenido_peliculas {
-        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
-        gap: 0.3rem;
-      }
-    .navbar{
-        display: none;
-    }
-    .bar {
-        padding: 0px 0;
-      }
-    .logo1{
-        font-size: 1.5rem;
-        margin-top: 2rem;
-        margin-left: 0.4rem;
-        margin-right: 7rem;
-    }
-    .bar-btn {
-        font-size: 27px;
-        margin-left: 16px;
-        margin-top: 1rem;
-      }
-      .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
-    }
-} */
     
    
