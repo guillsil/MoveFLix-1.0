@@ -1152,7 +1152,7 @@ footer {
         margin-left: 10px;
     }
 }
-@media (max-width: 280px){
+/* @media (max-width: 280px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
@@ -1173,3 +1173,4 @@ footer {
         margin-left: 10px;
     }
 }
+ */
