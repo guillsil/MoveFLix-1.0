@@ -1091,28 +1091,28 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 10px;
+  
     }
 }
 @media (max-width: 400px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 10px;
+    
     }
 }
 @media (max-width: 380px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 10px;
+
     }
 }
 @media (max-width: 360px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 10px;
+
     }
 }
 
@@ -1141,7 +1141,6 @@ footer {
       .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 10px;
     }
 }
 
@@ -1149,28 +1148,5 @@ footer {
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-        margin-left: 10px;
     }
 }
-/* @media (max-width: 280px){
-    .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
-        margin-left: 10px;
-    }
-}
-@media (max-width: 260px){
-    .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
-        margin-left: 10px;
-    }
-}
-@media (max-width: 240px){
-    .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
-        margin-left: 10px;
-    }
-}
- */
