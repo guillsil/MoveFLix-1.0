@@ -1108,6 +1108,14 @@ footer {
         margin-left: 10px;
     }
 }
+@media (max-width: 360px){
+    .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+        margin-left: 10px;
+    }
+}
+
 @media (max-width: 320px){
     .contenido_peliculas {
         grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
