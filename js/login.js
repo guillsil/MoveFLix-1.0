@@ -9,7 +9,6 @@ function validate(){
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     if(email == "moveflix@gmail.com" && password == "moveflix"){
-        /* abrir en la misma ventana la pagina principal */
         window.open("index.html", "_self");
         return false;
     }else{
