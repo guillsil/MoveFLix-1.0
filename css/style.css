@@ -2,7 +2,7 @@
     --celeste_pag: #03AAE6;
     --azul_pag: #080F28;
     --black_pag: #141414;
-    --dorado_pag:#dda90e ;
+    --dorado_pag:#dda90e;
     --gris_pag: #4A4A4A;
     --gris_claro_pag: #9B9B9B;
     --azul_pag: #080F28;
@@ -12,7 +12,7 @@
 /* scroll bar */
 html::-webkit-scrollbar{
     width: 0.5rem;
-    background: transparent ;
+    background: transparent;
 }
 html::-webkit-scrollbar-thumb{
     background: var(--dorado_pag);
@@ -768,7 +768,13 @@ nav{
 }
 
 
-
+/* login */
+.text-end img{
+    width: 30%;
+}
+.span-login{
+    color: #141414 ;
+}
 
 
 
