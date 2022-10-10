@@ -1144,9 +1144,59 @@ footer {
     }
 }
 
-@media (max-width: 300px){
-    .nav_label{
+@media screen and (max-width: 320px){
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+        gap: 0.3rem;
+      }
+    .navbar{
+        display: none;
+    }
+    .bar {
+        padding: 0px 0;
+      }
+    .logo1{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-left: 0.4rem;
+        margin-right: 7rem;
+    }
+    .bar-btn {
+        font-size: 27px;
+        margin-left: 16px;
+        margin-top: 1rem;
+      }
+      .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
     }
 }
+@media screen and (max-width: 280px){
+    .contenido_peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+        gap: 0.3rem;
+      }
+    .navbar{
+        display: none;
+    }
+    .bar {
+        padding: 0px 0;
+      }
+    .logo1{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-left: 0.4rem;
+        margin-right: 7rem;
+    }
+    .bar-btn {
+        font-size: 27px;
+        margin-left: 16px;
+        margin-top: 1rem;
+      }
+      .nav_label{
+        margin-top: 2rem;
+        font-size: 1.7rem; 
+    }
+}
+    
+
