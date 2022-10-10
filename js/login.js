@@ -10,7 +10,6 @@ function validate(){
     var password = document.getElementById("password").value;
     if(email == "moveflix@gmail.com" && password == "moveflix"){
         window.open("index.html", "_self");
-        return false;
     }else{
         alert("Usuario o contraseña incorrectos");
     }

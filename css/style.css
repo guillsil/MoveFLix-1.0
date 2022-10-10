@@ -1161,15 +1161,36 @@ footer {
         column-gap: 2px;
         align-items: center;
         column-gap: 0.5rem;
-        margin: 14.5rem -4rem 1rem;
+        margin: 2.5rem -4rem -3rem;
         color: var(--dorado_pag);
       }
     .ver_peli {
-        bottom: 12rem;
-        right: 1rem;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+        bottom: 13rem;
+        right: 3rem;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+      }
+    .descripcion{
+        font-size: 1rem;
+        margin: 5rem -4rem;
+      }
+    .descargar{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .link_descargas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 2rem;
+      }
+    .logo_footer{
+        display: none;
+    }
+    .caja-footer .lorem {
+        display: none;
+
       }
 }
 
