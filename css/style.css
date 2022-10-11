@@ -94,6 +94,17 @@ header{
 .logo2 span{
     color: var(--blanco_pag);
 }
+.logo2:hover span{
+    color: var(--dorado_pag);
+    transition: 1s all linear;
+}
+.logo2:hover{
+    color: var(--blanco_pag);
+    transition: 1s all linear;
+
+    
+
+}
 /* buscador */
 .busqueda{
     max-width: 240px;
@@ -188,73 +199,6 @@ header{
     height: 100%;
     width: 90%;
 }
-
-/*menu hamburguesa*/
-
-
-
-/* 
-.nav{
-    background: var(--azul_pag);
-    height: 80px;
-    color: var(--blanco_pag);
-}
-.nav-menu, a, span{
-    color: var(--blanco_pag);
-}
-.nav-menu, a, fa-solid{
-    color: var(--dorado_pag);
-}
-
-.nav_label{
-    color: var(--dorado_pag);
-    font-size: 1.5rem;
-    margin-left: 20px;
-    cursor: pointer;
-}
-.nav_items{
-    text-decoration: none;
-}
-.nav_items:hover{
-    color: var(--gris_pag);
-    transition: 0.3s all linear;
-}
-.nav-menu, a, span:hover{
-    color: var(--dorado_pag);
-    transition: 0.5s all linear;
-}
-.logo1{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-.logo1:hover{
-    color: var(--blanco_pag);
-    transition: 0.3s all linear;
-}     
-
-.nav_contenedor{
-    display: flex;
-    height: 100%;
-    width: 90%;
-    margin: 1.3rem auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav_imput:checked + nav-menu{
-    background: var(--azul_pag);
-}
-.nav_label, .nav_imput{
-    display: none;
-}
-.nav-menu{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 2rem;
-    font-size: 1rem;
-}
- */
-
 /* menu hamburguesa */
 nav{
     height: 100px;
@@ -269,8 +213,12 @@ nav{
 }
 .logo1:hover{
     color: var(--blanco_pag);
-    transition: 0.3s all linear;
+    transition: 1s all linear;
 } 
+.logo1:hover span{
+    color: var(--dorado_pag);
+    transition: 1s all linear;
+}
 .nav-menu, a, span:hover{
     color: var(--azul_pag);
     transition: 0.3s all linear;
@@ -322,6 +270,11 @@ nav{
     color: var(--azul_pag);
     transition: .2s;
 }
+.nav_label .fa-solid:hover{
+    color: var(--gris_claro_pag);
+    transition: 1s all linear;
+}
+    
 
 #check{
     display: none;
@@ -1150,9 +1103,7 @@ nav{
         column-gap: 7px;
         font-size: 8rem;
       }
-    .watch_home {
-        display: none;
-      }
+    
     .peli_texto h2 {
         font-size: 1.2rem;
         margin: -1rem -4rem;
@@ -1192,8 +1143,10 @@ nav{
     }
     .caja-footer .lorem {
         display: none;
-
       }
+    .trailer{
+        display: none;
+    }
 }
 
 
