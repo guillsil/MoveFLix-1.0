@@ -743,153 +743,152 @@ nav{
 
 
 /* paginas control */
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--dorado_pag);
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: var(--dorado_pag);
+    box-shadow: 0 0 10px  var(--dorado_pag), 0 0 40px var(--dorado_pag), 0 0 80px var(--dorado_pag);
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--dorado_pag));
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--dorado_pag));
+}
 
-/* separar los dos botones */
-.siguiente_pag{
-    display: grid;
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--dorado_pag));
+}
+
+.btn-neon:hover #span2{
+    top : 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--dorado_pag));
+}
+
+.btn-neon:hover #span4{
+    bottom : 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.btn-control{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(0, 1fr);
-    gap: 10px;
+    margin: 1rem 0;
 }
-.siguiente_btn{
-    background-color: var(--dorado_pag);
-    padding: 12px 15px;
-    border-radius: 10px;
-    color: var(--blanco_pag);
-    font-weight: 500;
-    margin-right: 20px;
-
-}
-.siguiente_btn:hover{
-    background-color: var(--gris_claro_pag);
-    transition: 0.5s all linear;
-
-}
-
-
-/* login */
-.text-end img{
-    width: 30%;
-}
-.span-login{
-    color: #141414 ;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* Footer */
 
-footer {
+.pie-pagina{
+    width: 100%;
+    background: var(--azul_pag);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+.pie-pagina .grupo-1 .box-footer figure{
     width: 100%;
     height: 100%;
-    background: var(--dorado_pag);
-    background-color: var(--azul_pag);
-}
-
-.contenedor-footer {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
 }
-
-.caja-footer {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+.pie-pagina .grupo-1 .box-footer figure img{
+    width: 250px;
 }
-
-.logo_footer{
-    font-weight: 600;
-    color: var(--blanco_pag);
-    text-transform: uppercase;
-    margin: 0 auto 0 0;
-    font-size: 2rem;
-    margin-left: 60px;
-    margin-bottom: 5px;
-}
-.parte_white{
-    color: var(--blanco_pag);
-}
-.parte_dorada{
+.pie-pagina .grupo-1 .box-footer h2{
     color: var(--dorado_pag);
-}
-
-.caja-footer .lorem {
-    max-width: 350px;
-    margin-top: 30px;
-    font-weight: 500;
-    color: var(--gris_claro_pag);
-    font-size: 18px;
-}
-
-.caja-footer h2 {
-    margin-bottom: 30px;
-    color: var(--gris_claro_pag);
-    font-weight: 700;
-}
-
-.caja-footer a {
-    margin-top: 10px;
-    color: var(--gris_claro_pag);
-    font-weight: 600;
-}
-
-.caja-footer a:hover {
-    opacity: 0.8;
-}
-
-.caja-footer a .fab {
+    margin-bottom: 20px;
     font-size: 20px;
 }
-
-.caja-footer i {
-    width: 20px;
-    box-sizing: border-box;
-}
-
-.caja-copy {
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 0px;
+.pie-pagina .grupo-1 .box-footer p{
+    color: var(--gris_claro_pag);
     margin-bottom: 10px;
 }
-
-
-.caja-copy p {
-    margin-top: 20px;
-    color: var(--gris_claro_pag);
+.pie-pagina .grupo-1 .box-footer .creadores a{
+    color: var(--blanco_pag);
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    margin-right: 10px;
+    background: var(--dorado_pag);
+    border-radius: 30px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box-footer .creadores a:hover{
+    color: var(--gris_pag);
+    transition: 0.5s all linear;
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--azul_pag);
+    background: var(--dorado_pag);
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
 
-.caja-copy hr {
-    border: none;
-    height: 1px;
-    background-color: var(--gris_claro_pag);
-}
 
+
+/* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
 @media (max-width: 1400px){
     nav{
         display: none;
     }
 }
 
- 
-
-
-/* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
 @media (max-width: 1170px) {
     .navbar{
         left: 0;
@@ -1050,9 +1049,12 @@ footer {
         line-height: 130px;
         margin: 0px -100px;
       }
-    
-    
-    
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
 }
 
 @media (max-width: 700px){
