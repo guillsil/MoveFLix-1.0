@@ -22,12 +22,37 @@
 </head>
 
 <body>
+    
     <!-- header -->
     <header>
+
+        <!--menu hamburguesa-->
+        <nav class="nav">
+            <div class="nav_contenedor">
+                <!-- logo -->
+                <a href="/index.html" class="logo1">
+                    Move<span>Flix</span>
+                </a>
+                <label for="check" class="nav_label">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="check" class="nav_imput">
+                <ul class="nav-menu">
+                    <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+                    <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-tv"></i> <span>Series</span></a></li>
+                    <li><a href="/peliculas.html" class="nav_items"><i class="fa-solid fa-film"></i> <span>Peliculas</span></a></li>
+                    <li><a href="#" class="nav_items"><i class="fa-solid fa-store"></i> <span>Qatar 2022</span></a></li>
+                    <li><a href="/login.html" class="nav_items"><i class="fa-solid fa-user"></i> <span>Cuenta</span></a></li>
+                </ul>
+
+            </div>
+            
+        </nav>
+
         <!-- nav -->
         <div class="bar contenedor">
             <!-- logo -->
-            <a href="/index.html" class="logo">
+            <a href="/index.html" class="logo2">
                 Move<span>Flix</span>
             </a>
             <!-- busqueda -->
@@ -36,7 +61,7 @@
                 <i class="fas fa-search"></i>
             </div>
             <!-- usuario -->
-            <a href="#" class="usuario">
+            <a href="/login.html" class="usuario">
                 <img src="/img/iconos/icon_netflix.png" class="usuario_logo" alt="">
             </a>
             <!-- navvar -->
@@ -85,7 +110,7 @@
                 <i class="fa-regular fa-star-half-stroke"></i>
             </div>
             <!-- ver trailer -->
-            <a href="#" class="watch_home">
+            <a href="#" class="watch_home trailer">
                 <i class="fa-solid fa-play"></i>
                 <span class="watch_home_text">Ver tráiler</span>
             </a>
@@ -287,52 +312,49 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-
+    <!-- pasar a la siguiente pagina -->
+    <div class="btn-control">
+        <a href="/series.html" class="btn-neon">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <a href="#" class="btn-neon">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
     <!-- footer -->
-    <footer>
-        <div class="contenedor-footer">
-            <div class="caja-footer">
-                <!-- logo -->
-                <a href="https://github.com/guillsil/Tp-Proytecto.git" class="logo_footer">
-                    <span class="parte_dorada">Move</span><span class="parte_white">Flix</span>
-                </a>
-                <div class="lorem">
-                    <p>MoveFlix es un servicio de streaming por suscripción que les permite a sus miembros ver series y
-                        películas sin publicidades en un dispositivo con conexión a internet. También puedes descargar
-                        series y películas en un dispositivo con iOS, Android o Windows 10 y verlas sin conexión a
-                        internet.</p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-footer">
+                <figure>
+                    <a href="/index.html">
+                        <img src="/img/iconos/LOGO.png" alt="Logo MoveFlix">
+                    </a>
+                </figure>
+            </div>
+            <div class="box-footer">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>MoveFlix es una plataforma de streaming que ofrece una gran variedad de películas, series y documentales.</p>
+                <p>Disfruta de tus contenidos favoritos en cualquier momento y lugar.</p>
+            </div>
+            <div class="box-footer">
+                <h2>CREADORES</h2>
+                <div class="creadores">
+                    <a href="https://github.com/guillsil"><i class="fa-solid fa-user-secret"></i></a>
+                    <a href="https://github.com/rafradak"><i class="fa-solid fa-user-astronaut"></i></a>
+                    <a href="https://github.com/Francicca"><i class="fa-solid fa-user-graduate"></i></a>
                 </div>
             </div>
-            <div class="caja-footer">
-                <h2>Sobre Nosotros</h2>
-                <a href="/index.html"><i class="fa-solid fa-film"></i>MoveFlix</a>
-                <a href="#"><i class="fa-solid fa-user-graduate"></i>Guille</a>
-                <a href="#"><i class="fa-solid fa-user-astronaut"></i>Fran</a>
-                <a href="#"><i class="fa-solid fa-user-secret"></i>Juanma</a>
-            </div>
-
-            <div class="caja-footer">
-                <h2>Contacto</h2>
-                <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i>Email</a>
-                <a href="#"><i class="fa-solid fa-phone"></i>Telefono</a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i>Ubicacion</a>
-            </div>
-
-            <div class="caja-footer">
-                <h2>Redes Sociales</h2>
-                <a href="#"> <i class="fab fa-facebook-square"></i>Facebook</a>
-                <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
-                <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
-                <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
-
-            </div>
-
         </div>
-
-        <div class="caja-copy">
-            <hr>
-            <p>Todos los derechos reservados © 2022 <b>MoveFlix</b></p>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>MoveFlix</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
 

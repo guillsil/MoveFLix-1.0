@@ -707,8 +707,8 @@ nav{
     transition: 0.2s;
 }
 .btn-neon:hover{
-    background: var(--dorado_pag);
-    box-shadow: 0 0 10px  var(--dorado_pag), 0 0 40px var(--dorado_pag), 0 0 80px var(--dorado_pag);
+    background: var(--azul_pag);
+    box-shadow: 0 0 10px  var(--azul_pag), 0 0 40px var(--azul_pag), 0 0 80px var(--azul_pag);
     transition-delay: 1s;
 }
 .btn-neon span{
