@@ -271,7 +271,7 @@ nav{
     transition: .2s;
 }
 .nav_label .fa-solid:hover{
-    color: var(--gris_claro_pag);
+    color: #dda90edc;
     transition: 1s all linear;
 }
     
