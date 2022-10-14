@@ -173,7 +173,12 @@ header{
 }
 .link_nav{
     margin-top: 0.5rem;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    
+}
+.link_nav:hover{
+    color: var(--dorado_pag);
+    transition: 0.3s all linear;
 }
 
 .nav{
@@ -199,6 +204,9 @@ header{
     height: 100%;
     width: 90%;
 }
+.link_home {
+    margin-top: 0.5rem;
+  }
 /* menu hamburguesa */
 nav{
     height: 100px;
