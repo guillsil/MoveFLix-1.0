@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/iconos/logo_ico.png">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <!-- link swiper -->
+
+    <title>MoveFlix-Avengers-5</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+
+        <!--menu hamburguesa-->
+        <nav class="nav">
+            <div class="nav_contenedor">
+                <!-- logo -->
+                <a href="/index.html" class="logo1">
+                    Move<span>Flix</span>
+                </a>
+                <label for="check" class="nav_label">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="check" class="nav_imput">
+                <ul class="nav-menu">
+                    <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+                    <li><a href="/peliculas.html" class="nav_items"><i class="fa-solid fa-film"></i> <span>Peliculas</span></a></li>
+                    <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-tv"></i> <span>Series</span></a></li>
+                    <li><a href="categorias.html" class="nav_items"><i class="fa-regular fa-compass"></i> <span>Categorias</span></a></li>
+                    <li><a href="/login.html" class="nav_items"><i class="fa-solid fa-user"></i> <span>Cuenta</span></a></li>
+                </ul>
+
+            </div>
+            
+        </nav>
+
+        <!-- nav -->
+        <div class="bar contenedor">
+            <!-- logo -->
+            <a href="/index.html" class="logo2">
+                Move<span>Flix</span>
+            </a>
+            <!-- busqueda -->
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar" name="" id="busqueda_input">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- usuario -->
+            <a href="/login.html" class="usuario">
+                <img src="/img/iconos/icon_netflix.png" class="usuario_logo" alt="">
+            </a>
+            <!-- navvar -->
+            <div class="navbar">
+                <a href="/index.html" class="list_menu e">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span class="link_home">Inicio</span>
+                </a>
+
+                <a href="/series.html" class="list_menu">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="link_nav">Series</span>
+                </a>
+                <a href="/peliculas.html" class="list_menu activ">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="link_nav">Peliculas</span>
+                </a>
+
+                <a href="/categorias.html" class="list_menu">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="link_nav">Categorias</span>
+                </a>
+
+                <a href="/login.html" class="list_menu">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="link_nav">Cuenta/span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <!-- Contenedor de pelicula -->
+    <div class="contendor_peli contenedor">
+        <!-- imagen  o video -->
+        <!-- <img src="/img/peliculas/avenger_portada.jpeg" alt="" class="peli_img"> -->
+        <!-- ?autoplay=1&controls=0&loop=1&mute=1 pegar esto al final del link del video  y pone la clase class="peli_img" -->
+        <iframe class="peli_img" src="https://www.youtube.com/embed/S8RE0GXyl2U?autoplay=1&controls=0&loop=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <!-- texto -->
+        <div class="peli_texto">
+            <h2>Super Mario Bros</h2>
+            <!-- valoracion -->
+            <div class="valoracion">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <!--boton para ver el  trailer -->
+            <!-- poner el atributo target="_blank" para que sea se se habra en otra pagina -->
+            <a href="https://www.youtube.com/watch?v=S8RE0GXyl2U" target="_blank" class="watch_home trailer">
+                <i class="fa-solid fa-play"></i>
+                <span class="watch_home_text">Ver el Trailer Ahora</span>
+            </a>
+            <br>
+            <div class="descripcion">
+                <p>
+                    La película cuenta la historia de Mario y Luigi, dos hermanos que viajan a un mundo oculto para rescatar a la Princesa Peach, capturada por el malvado Rey Bowser. Las cosas, sin embargo no serán sencillas. Mario y Luigi tendrán que enfrentarse a un ejército de setas animadas antes de luchar contra su oponente.
+                </p>
+            </div>
+            <!-- etiquetas -->
+            <div class="etiquetas">
+                <span>Ciencia Ficción</span>
+                <span>Mario</span>
+                <span>Luigi</span>
+            </div>
+            
+        </div>
+        <!-- reproducir pelicula -->
+        <i class="fa-solid fa-play ver_peli"></i>
+        <!-- video contenedor -->
+        <div class="vedeo_contenedor">
+            <div class="caja_video">
+                <!--Reproductor de Video poner aqui el contenido, poner el id id="cont_video" al iframe  y las variables al final del link del video ?autoplay=0&controls=0&loop=1 -->
+                
+                <iframe id="cont_video" src="https://www.youtube.com/embed/rLl9XBg7wSs?start=12&autoplay=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- boton para cerrar el video -->
+                <i class="fa-solid fa-times-circle cerrar_video"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- Descargas -->
+    <div class="descargar">
+        <h2 class="descargar_peli">Descargar Pelicula</h2>
+        <div class="link_descargas">
+            <a href="https://www.youtube.com/watch?v=S8RE0GXyl2U" download="">1080p</a>
+            <a href="https://www.youtube.com/watch?v=S8RE0GXyl2U" download="">3D</a>
+            <a href="https://www.youtube.com/watch?v=S8RE0GXyl2U" download="">4k</a>
+            <a href="https://www.youtube.com/watch?v=S8RE0GXyl2U" download="">8k</a>
+        </div>
+    </div>
+
+    <!-- Peliculas que te recomendamos -->
+    <section class="polpular contenedor" id="popular">
+        <!-- boveda -->
+        <div class="boveda">
+            <h2 class="boveda_titulo">Películas que te recomendamos</h2>
+
+        </div>
+        <!-- contenido  uso swipeer enlace:https://stackoverflow.com/questions/60715402/swiper-js-autoplay-slider-->
+        <div class="contenido_popular swiper">
+            <div class="swiper-wrapper">
+                <!-- caja de pelicula 1 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/avatar.jpg" class="box_movie_img" alt="avatar2">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Avatar 2</h2>
+                            <span class="genero_movie">Ciencia Ficción</span>
+                            <a href="/movies/movie1.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 2 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/phoenix.jpg" class="box_movie_img" alt="phoenix">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Joker</h2>
+                            <span class="genero_movie">Suspense Psicológico</span>
+                            <a href="/movies/movie2.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 3 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/gollum.jpg" class="box_movie_img" alt="gollum">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Gollum, El Señor Del Precioso</h2>
+                            <span class="genero_movie">Fantasía Épica</span>
+                            <a href="/movies/movie3.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 4 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/wolworine.jpg" class="box_movie_img" alt="wolverine">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Wolverine vs American Sniper</h2>
+                            <span class="genero_movie">Superhéroes - Acción</span>
+                            <a href="/movies/movie4.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 5 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/mad-max-fury-road.jpg" class="box_movie_img" alt="mad-max-fury-road">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Mad Max: Valhalla</h2>
+                            <span class="genero_movie">Ciencia Ficción Apocalíptica</span>
+                            <a href="/movies/movie5.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 6 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/hydra-capitan-america.jpg" class="box_movie_img" alt="hydra-capitan-america">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Capitán América: Hydra</h2>
+                            <span class="genero_movie">Superhéroes - Acción</span>
+                            <a href="/movies/movie6.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 7 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/the-batman.jpg" class="box_movie_img" alt="the-batman">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">The Batman</h2>
+                            <span class="genero_movie">Superhéroes - Acción</span>
+                            <a href="/movies/movie7.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 8 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/riddick-toretto.jpg" class="box_movie_img" alt="riddick-toretto">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Las Crónicas de Toretto</h2>
+                            <span class="genero_movie">Acción</span>
+                            <a href="/movies/movie8.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 9 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/the-matrix.jpg" class="box_movie_img" alt="the-matrix">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">The Matrix 4</h2>
+                            <span class="genero_movie">Ciencia Ficción - Acción</span>
+                            <a href="/movies/movie9.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 10 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/heisenberg-thanos.jpg" class="box_movie_img" alt="heisenberg-thanos">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Walter White es... ¡Heisenberg Thanos!</h2>
+                            <span class="genero_movie">Acción</span>
+                            <a href="/movies/movie10.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- caja de pelicula 11 -->
+                <div class="swiper-slide">
+                    <div class="box_movie">
+                        <img src="/img/peliculas/indiana-rock.jpg" class="box_movie_img" alt="">
+                        <div class="box_titulo">
+                            <h2 class="titulo_movie">Indiana "The Rock" Jones</h2>
+                            <span class="genero_movie">Aventura</span>
+                            <a href="/movies/movie11.html" class="watch_home ">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- pasar a la siguiente pagina -->
+    <div class="btn-control">
+        <a href="/index.html" class="btn-neon">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <a href="#" class="btn-neon">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-footer">
+                <figure>
+                    <a href="/index.html">
+                        <img src="/img/iconos/LOGO.png" alt="Logo MoveFlix">
+                    </a>
+                </figure>
+            </div>
+            <div class="box-footer">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>MoveFlix es una plataforma de streaming que ofrece una gran variedad de películas, series y documentales.</p>
+                <p>Disfruta de tus contenidos favoritos en cualquier momento y lugar.</p>
+            </div>
+            <div class="box-footer">
+                <h2>CREADORES</h2>
+                <div class="creadores">
+                    <a href="https://github.com/guillsil"><i class="fa-solid fa-user-secret"></i></a>
+                    <a href="https://github.com/rafradak"><i class="fa-solid fa-user-astronaut"></i></a>
+                    <a href="https://github.com/Francicca"><i class="fa-solid fa-user-graduate"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>MoveFlix</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    
+     
+
+
+    <!-- links swiper -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!-- link js -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
