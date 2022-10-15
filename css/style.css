@@ -296,48 +296,9 @@ nav{
     display: block;
 }
 
-/* 
-@media screen and (min-width: 769px){
-    nav{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px){ 
-    nav{
-        height: 100px;
-
-    }
-
-    .bar-btn{
-        display: none;
-    }
-
-    .nav-menu{
-        position: relative;
-        height: 100px;
-        top: 0;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
-    }
-
-    .nav-menu li{
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
-    }
-
-    .nav-menu li a{
-        font-size: 12px;
-    }
-} */
-
-
 
 /* Home */
+
 .home{
     position: relative;
     min-height: 470px;
@@ -412,10 +373,8 @@ nav{
     color: var(--dorado_pag);
 }
 
-
-
-
 /* movie play */
+
 .contendor_peli{
     position: relative;
     min-height: 540px;
@@ -604,8 +563,6 @@ nav{
 }
 
 
-
-
 /* boveda */
 
 .boveda{
@@ -637,6 +594,7 @@ nav{
 
 
 /* hay que agregar una animacion cuando se pase el puntero por la imagen */
+
 
 .box_movie_img{
     width: 100%;
@@ -672,6 +630,8 @@ nav{
 }
 
 /* swiper botones */
+
+
 .swiper-button-next::after,
 .swiper-button-prev::after,
 .swiper-pagination::after{
@@ -684,7 +644,6 @@ nav{
 .swiper-pagination:hover::after{
     color: var(--blanco_pag);
 } 
-
 
 
 /* Peliculas y Series */
@@ -704,6 +663,8 @@ nav{
 
 
 /* paginas control */
+
+
 .btn-neon{
     position: relative;
     display: inline-block;
@@ -780,6 +741,8 @@ nav{
 }
 
 /* formulario de registro */
+
+
 main {
 	max-width: 800px;
 	width: 90%;
@@ -904,23 +867,6 @@ main {
 }
 
 
-/* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
-
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
-}
-
 /* Footer */
 
 .pie-pagina{
@@ -983,12 +929,15 @@ main {
     font-size: 15px;
 }
 
-
+/* ----- -----  Mediaqueries ----- ----- */
 
 /* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
 @media (max-width: 1400px){
     nav{
         display: none;
+    }
+    section{
+        padding: 0 0 2rem ;
     }
 }
 
@@ -1012,6 +961,9 @@ main {
     nav {
         display: none;
       }
+      section{
+        padding: -1 0 2rem ;
+    }
 }
 @media (max-width: 1060px){
     .contenedor{
@@ -1158,6 +1110,19 @@ main {
         grid-gap: 30px;
         padding: 35px 0;
     }
+    .formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
 }
 
 @media (max-width: 700px){
@@ -1198,25 +1163,61 @@ main {
     
     
 }
-@media (max-width: 425px){
-    .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
-  
-    }
-}
+
 @media (max-width: 400px){
     .nav_label{
         margin-top: 2rem;
         font-size: 1.7rem; 
-    
     }
-}
-@media (max-width: 380px){
-    .nav_label{
-        margin-top: 2rem;
-        font-size: 1.7rem; 
-
+    /* pag individual */
+    .etiquetas {
+        margin: -5rem -4rem;
+        column-gap: 7px;
+        font-size: 8rem;
+      }
+    
+    .peli_texto h2 {
+        font-size: 1.2rem;
+        margin: -1rem -4rem;
+      }
+    .valoracion {
+        font-size: 1.2rem;
+        display: flex;
+        column-gap: 2px;
+        align-items: center;
+        column-gap: 0.5rem;
+        margin: 2.5rem -4rem -3rem;
+        color: var(--dorado_pag);
+      }
+    .ver_peli {
+        bottom: 13rem;
+        right: 3rem;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+      }
+    .descripcion{
+        font-size: 1rem;
+        margin: 5rem -4rem;
+      }
+    .descargar{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .link_descargas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 2rem;
+      }
+    .logo_footer{
+        display: none;
+    }
+    .caja-footer .lorem {
+        display: none;
+      }
+    .trailer{
+        display: none;
     }
 }
 @media (max-width: 360px){
@@ -1224,6 +1225,56 @@ main {
         margin-top: 2rem;
         font-size: 1.7rem; 
 
+    }
+    /* pag individual */
+    .etiquetas {
+        margin: -5rem -4rem;
+        column-gap: 7px;
+        font-size: 8rem;
+      }
+    
+    .peli_texto h2 {
+        font-size: 1.2rem;
+        margin: -1rem -4rem;
+      }
+    .valoracion {
+        font-size: 1.2rem;
+        display: flex;
+        column-gap: 2px;
+        align-items: center;
+        column-gap: 0.5rem;
+        margin: 2.5rem -4rem -3rem;
+        color: var(--dorado_pag);
+      }
+    .ver_peli {
+        bottom: 13rem;
+        right: 3rem;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+      }
+    .descripcion{
+        font-size: 1rem;
+        margin: 5rem -4rem;
+      }
+    .descargar{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .link_descargas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 2rem;
+      }
+    .logo_footer{
+        display: none;
+    }
+    .caja-footer .lorem {
+        display: none;
+      }
+    .trailer{
+        display: none;
     }
 }
 

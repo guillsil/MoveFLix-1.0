@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Sen:wght@400;700;800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
+    <!-- sweetaalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- js -->
     <script src="/js/app.js"></script>
 
@@ -41,7 +43,7 @@
                     <li><a href="/index.html" class="nav_items"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
                     <li><a href="/peliculas.html" class="nav_items"><i class="fa-solid fa-film"></i> <span>Peliculas</span></a></li>
                     <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-tv"></i> <span>Series</span></a></li>
-                    <li><a href="categorias.html" class="nav_items"><i class="fa-regular fa-compass"></i> <span>Categorias</span></a></li>
+                    <li><a href="#" class="nav_items"><i class="fa-solid fa-thumbs-up"></i> <span>Watchlist</span></a></li>
                     <li><a href="/login.html" class="nav_items"><i class="fa-solid fa-user"></i> <span>Cuenta</span></a></li>
                 </ul>
 
@@ -68,12 +70,12 @@
             <div class="navbar">
                 <a href="/index.html" class="list_menu">
                     <i class="fa-solid fa-house-user"></i>
-                    <span class="link_home">Inicio</span>
+                    <span class="link_nav">Inicio</span>
                 </a>
 
                 <a href="/series.html" class="list_menu active">
                     <i class="fa-solid fa-tv"></i>
-                    <span class="link_nav">Series</span>
+                    <span class="link_home">Series</span>
                 </a>
                 <a href="/peliculas.html" class="list_menu">
                     <i class="fa-solid fa-film"></i>
@@ -81,13 +83,13 @@
                 </a>
 
                 <a href="/categorias.html" class="list_menu">
-                    <i class="fa-solid fa-list"></i>
-                    <span class="link_nav">Categorias</span>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span class="link_nav">Watchlist</span>
                 </a>
 
-                <a href="/tienda.html" class="list_menu">
-                    <i class="fa-solid fa-store"></i>
-                    <span class="link_nav">Qatar 2022</span>
+                <a href="/login.html" class="list_menu">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="link_nav">Cuenta</span>
                 </a>
             </div>
 
@@ -100,7 +102,7 @@
         <div class="home_info">
             <h1 class="home_titulo">AHS<span>NYC</span></h1>
             <p class="home_descripcion">Mysterious deaths and disappearances ramp up in the city. A doctor makes a frightening discovery, and a local reporter becomes tomorrow's headline.</p>
-            <a href="/movie.html" class="watch_home">
+            <a href="/series/ahs-nyc.html" class="watch_home">
                 <i class="fa-solid fa-play"></i>
                 <span class="watch_home_text">Ver ahora</span>
             </a>
@@ -298,7 +300,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Juego de Tronos</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#"  class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -311,7 +313,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> American Horror Story</h2>
                         <span class="genero_movie">Terror/Suspenso</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#"  class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -324,7 +326,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Scream</h2>
                         <span class="genero_movie">Terror/Comedia</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -338,7 +340,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Piratas del Caribe</h2>
                         <span class="genero_movie">Acción/Comedia</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -351,7 +353,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Madame Web</h2>
                         <span class="genero_movie">Ficción/Acción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -364,7 +366,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Marvel Zombies</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -378,7 +380,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Jhon Rick</h2>
                         <span class="genero_movie">Acción/Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -391,7 +393,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> HellBoy Monsters</h2>
                         <span class="genero_movie">Mounstros/Infantil</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -405,7 +407,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Dr Strange</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -418,7 +420,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> The boys 2</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -432,7 +434,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Tortugas Ninjas</h2>
                         <span class="genero_movie">Infantil</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -446,7 +448,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Harry Potter</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -460,7 +462,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Hellmo</h2>
                         <span class="genero_movie">Infantil/Acción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -474,7 +476,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> The Walking Toys</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -488,7 +490,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> The boys</h2>
                         <span class="genero_movie">Drama/Acción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -501,7 +503,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -514,7 +516,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -527,7 +529,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -540,7 +542,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -553,7 +555,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Dalmatas</h2>
                         <span class="genero_movie">Infantil</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -566,7 +568,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -579,7 +581,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -592,7 +594,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -605,7 +607,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">.</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -618,7 +620,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> NightCrawler</h2>
                         <span class="genero_movie">Acción/Suspenso</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -631,7 +633,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Proximamente...</h2>
                         <span class="genero_movie">Zombie</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -644,7 +646,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Planeta de los Simios</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -657,7 +659,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Blackswan</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -670,7 +672,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Blade Runner</h2>
                         <span class="genero_movie">Ficción</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>
@@ -683,7 +685,7 @@
                     <div class="box_titulo">
                         <h2 class="titulo_movie"> Brad's Army</h2>
                         <span class="genero_movie">Militar</span>
-                        <a href="#" class="watch_home ">
+                        <a href="#" onclick="mostrar()" class="watch_home ">
                             <i class="fa-solid fa-play"></i>
                         </a>
                     </div>

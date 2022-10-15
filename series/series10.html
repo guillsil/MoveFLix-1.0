@@ -18,11 +18,10 @@
     <script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
     <!-- link swiper -->
 
-    <title>MoveFlix</title>
+    <title>MoveFlix-Chucky-2</title>
 </head>
 
 <body>
-    
     <!-- header -->
     <header>
 
@@ -38,10 +37,10 @@
                 </label>
                 <input type="checkbox" id="check" class="nav_imput">
                 <ul class="nav-menu">
-                    <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+                    <li><a href="/index.html" class="nav_items"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
                     <li><a href="/peliculas.html" class="nav_items"><i class="fa-solid fa-film"></i> <span>Peliculas</span></a></li>
                     <li><a href="/series.html" class="nav_items"><i class="fa-solid fa-tv"></i> <span>Series</span></a></li>
-                    <li><a href="categorias.html" class="nav_items"><i class="fa-regular fa-compass"></i> <span>Categorias</span></a></li>
+                    <li><a href="/categorias.html" class="nav_items"><i class="fa-solid fa-thumbs-up"></i> <span>Watchlist</span></a></li>
                     <li><a href="/login.html" class="nav_items"><i class="fa-solid fa-user"></i> <span>Cuenta</span></a></li>
                 </ul>
 
@@ -61,19 +60,19 @@
                 <i class="fas fa-search"></i>
             </div>
             <!-- usuario -->
-            <a href="/login.html" class="usuario">
+            <a href="login.html" class="usuario">
                 <img src="/img/iconos/icon_netflix.png" class="usuario_logo" alt="">
             </a>
             <!-- navvar -->
             <div class="navbar">
-                <a href="/index.html" class="list_menu active">
+                <a href="/index.html" class="list_menu">
                     <i class="fa-solid fa-house-user"></i>
-                    <span class="link_home">Inicio</span>
+                    <span class="link_nav">Inicio</span>
                 </a>
 
-                <a href="/series.html" class="list_menu">
+                <a href="/series.html" class="list_menu active">
                     <i class="fa-solid fa-tv"></i>
-                    <span class="link_nav">Series</span>
+                    <span class="link_home">Series</span>
                 </a>
                 <a href="/peliculas.html" class="list_menu">
                     <i class="fa-solid fa-film"></i>
@@ -81,68 +80,81 @@
                 </a>
 
                 <a href="/categorias.html" class="list_menu">
-                    <i class="fa-solid fa-list"></i>
-                    <span class="link_nav">Categorias</span>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span class="link_nav">Watchlist</span>
                 </a>
 
-                <a href="/tienda.html" class="list_menu">
-                    <i class="fa-solid fa-store"></i>
-                    <span class="link_nav">Qatar 2022</span>
+                <a href="/login.html" class="list_menu">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="link_nav">Cuenta</span>
                 </a>
             </div>
 
         </div>
     </header>
-
-    <!-- Movie Container -->
-    <div class="movie_contenedor contenedor">
-        <!-- imagen principal -->
-        <img src="img/series/she-hulk.jpg" alt="she-hulk" class="movie_img">
-        <!-- Titulo de la pelicula -->
-        <div class="movie_text">
+    <!-- Contenedor de pelicula -->
+    <div class="contendor_peli contenedor">
+        <!-- imagen  o video -->
+        <!-- ?autoplay=1&controls=0&loop=1&mute=1 pegar esto al final del link del video  y pone la clase class="peli_img" -->
+        <iframe class="peli_img" src="https://www.youtube.com/embed/erX-bcVBZgI?autoplay=1&controls=0&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <!-- texto -->
+        <div class="peli_texto">
             <h2>She-Hulk</h2>
-            <!-- Valoracion: poner estrellas que coresponden segun la pelicula -->
-            <div class="calidad">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+            <!-- valoracion -->
+            <div class="valoracion">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
             </div>
-            <!-- ver trailer -->
-            <a href="#" class="watch_home trailer">
+            <!--boton para ver el  trailer -->
+            <!-- poner el atributo target="_blank" para que sea se se habra en otra pagina -->
+            <a href="http://127.0.0.1:5500/series/series10.html" target="_blank" class="watch_home trailer">
                 <i class="fa-solid fa-play"></i>
-                <span class="watch_home_text">Ver tráiler</span>
+                <span class="watch_home_text">Ver el Trailer Ahora</span>
             </a>
             <br>
-            <div class="trama">
+            <div class="descripcion">
                 <p>
                     Jennifer Walters tiene una vida complicada como abogada soltera y también resulta ser un armatoste superpoderoso verde.
                 </p>
-
             </div>
-            <!-- generos asociado  a las peliculas -->
-            <div class="generos">
-                <span>Superhéroes</span>
-                <span>32k</span>
-                <span>4D</span>
-                <span>Fiona con músculos, Rayos Gamma</span>
+            <!-- etiquetas -->
+            <div class="etiquetas">
+                <span>Fiona con músculos</span>
+                <span>Rayos Gamma</span>
                 <span>Tatiana Maslany</span>
+            </div>
+            
+        </div>
+        <!-- reproducir pelicula -->
+        <i class="fa-solid fa-play ver_peli"></i>
+        <!-- video contenedor -->
+        <div class="vedeo_contenedor">
+            <div class="caja_video">
+                <!--Reproductor de Video poner aqui el contenido, poner el id id="cont_video" al iframe  y las variables al final del link del video ?autoplay=0&controls=0&loop=1 -->
+                
+                <iframe id="cont_video" src="https://www.youtube.com/embed/B_RasfZ5uj0?autoplay=0&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- boton para cerrar el video -->
+                <i class="fa-solid fa-times-circle cerrar_video"></i>
             </div>
 
         </div>
-        <!-- ver pelicula -->
-        <i class="fa-solid fa-circle-play ver_movie"></i>
-        <!-- video trailer -->
-        <!-- <div class="movie_contenedor contenedor">
-            <div class="caja_video">
-                <video id="videos" src="/img/peliculas/pelicula_destacada/trailer_avatar2.mp4" controls></video>
-                <i class="fa-solid fa-x cerrar_video"></i>
-            </div>
-        </div> -->
+    </div>
+    <!-- Descargas -->
+    <div class="descargar">
+        <h2 class="descargar_peli">Descargar Pelicula</h2>
+        <div class="link_descargas">
+            <a href="http://127.0.0.1:5500/series/series10.html" download="">1080p</a>
+            <a href="http://127.0.0.1:5500/series/series10.html" download="">3D</a>
+            <a href="http://127.0.0.1:5500/series/series10.html" download="">4k</a>
+            <a href="http://127.0.0.1:5500/series/series10.html" download="">8k</a>
+        </div>
     </div>
 
-    <!-- Peliculas que te recomendamos -->
+    <!-- Series que te recomendamos -->
     <section class="polpular contenedor" id="popular">
         <!-- boveda -->
         <div class="boveda">
@@ -154,45 +166,48 @@
                 <!-- caja de pelicula 1 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/juego-de-tronos.jpg" class="box_movie_img" alt="juego-de-tronos">
+                        <img src="/img/series/juego-de-tronos.jpg"
+                            class="box_movie_img" alt="juego-de-tronos">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Juego de Tronos</h2>
                             <span class="genero_movie">Drama, Fantasía Medieval</span>
-                            <a href="series1.html" class="watch_home ">
+                            <a href="/series/series1.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 2 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/squid-game.jpg" class="box_movie_img" alt="squid-game">
+                        <img src="/img/series/calamar.jpg"
+                            class="box_movie_img" alt="squid-game">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">El Juego Del Calamar</h2>
                             <span class="genero_movie">Suspense, Supervivencia</span>
-                            <a href="series2.html" class="watch_home ">
+                            <a href="/series/series2.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 3 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/darth-vader.jpg" class="box_movie_img" alt="darth-vader">
+                        <img src="/img/series/darth-vader.jpg" class="box_movie_img"
+                            alt="darth-vader">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Darth Vader</h2>
                             <span class="genero_movie">Ciencia Ficción</span>
-                            <a href="series3.html" class="watch_home ">
+                            <a href="/series/series3.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 4 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
@@ -200,41 +215,41 @@
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Baby Yoda</h2>
                             <span class="genero_movie">Ciencia Ficción</span>
-                            <a href="series4.html" class="watch_home ">
+                            <a href="/series/series4.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 5 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/stranger-things.jpg" class="box_movie_img" alt="stranger-things">
+                        <img src="/img/series/strange_things.jpg" class="box_movie_img" alt="stranger-things">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Stranger Things</h2>
                             <span class="genero_movie">Ciencia Ficción, Suspense</span>
-                            <a href="series5.html" class="watch_home ">
+                            <a href="/series/series5.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 6 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/v-vendetta.jpg" class="box_movie_img" alt="v-vendetta">
+                        <img src="/img/series/vedeta.jpg" class="box_movie_img" alt="v-vendetta">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">La Casa de la Vendetta</h2>
                             <span class="genero_movie">Ciencia Ficción, Distopía</span>
-                            <a href="series6.html" class="watch_home ">
+                            <a href="/series/series6.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 7 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
@@ -242,13 +257,13 @@
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Blade Runner 2049</h2>
                             <span class="genero_movie">Mundo post-apocalíptico</span>
-                            <a href="series7.html" class="watch_home ">
+                            <a href="/series/series7.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 8 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
@@ -256,13 +271,13 @@
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Peaky Blinders</h2>
                             <span class="genero_movie">Drama histórico, Gángsters</span>
-                            <a href="series8.html" class="watch_home ">
+                            <a href="/series/series8.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 9 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
@@ -270,35 +285,37 @@
                         <div class="box_titulo">
                             <h2 class="titulo_movie">American Horror Story</h2>
                             <span class="genero_movie">Antología, Terror</span>
-                            <a href="series9.html" class="watch_home ">
+                            <a href="/series/series9.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 10 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/she-hulk.jpg" class="box_movie_img" alt="she-hulk">
+                        <img src="/img/series/she_hulk.jpg"
+                            class="box_movie_img" alt="she-hulk">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">She-Hulk</h2>
                             <span class="genero_movie">Superhéroes</span>
-                            <a href="series10.html" class="watch_home ">
+                            <a href="/series/series10.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- caja de pelicula 11 -->
                 <div class="swiper-slide">
                     <div class="box_movie">
-                        <img src="/img/series/tortugas-ninja.jpg" class="box_movie_img" alt="tortugas-ninja">
+                        <img src="/img/series/tortugas_ninjas.jpg"
+                            class="box_movie_img" alt="tortugas-ninja">
                         <div class="box_titulo">
                             <h2 class="titulo_movie">Tortugas Ninja</h2>
                             <span class="genero_movie">Acción</span>
-                            <a href="series11.html" class="watch_home ">
+                            <a href="/series/series11.html" class="watch_home ">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -312,9 +329,10 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+
     <!-- pasar a la siguiente pagina -->
     <div class="btn-control">
-        <a href="/series.html" class="btn-neon">
+        <a href="/series2.html" class="btn-neon">
             <span id="span1"></span>
             <span id="span2"></span>
             <span id="span3"></span>
@@ -357,6 +375,8 @@
             <small>&copy; 2023 <b>MoveFlix</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
+    
+     
 
 
     <!-- links swiper -->
