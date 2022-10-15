@@ -41,16 +41,17 @@ breakpoints: {
 
 
 /* Ver la Pelicula */ 
-let verPelicula = document.querySelector('.ver_peli');
-let video = document.querySelector('.vedeo_contenedor');
-let cont_video = document.querySelector('#cont_video');
-let closeBtn = document.querySelector('.cerrar_video');
+ 
+let playButton = document.querySelector(".ver_peli");
+let video = document.querySelector(".vedeo_contenedor");
+let cont_video = document.querySelector("#cont_video");
+let closeBtn = document.querySelector(".cerrar_video");
 
-verPelicula.onclick = ()  => {
+playButton.onclick = ()  => {
   video.classList.add('show_peli');
   cont_video.play();
 };
-
+/* poner pausa video al precionar el boton*/
 closeBtn.onclick = ()  => {
   video.classList.remove('show_peli');
   cont_video.pause();
