@@ -1160,7 +1160,9 @@ main {
         margin-top: 6rem !important;
         margin-bottom: 2.5rem;
       }
-    
+    section {
+        padding: 3rem 0 2rem;
+      }
     
 }
 
