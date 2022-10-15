@@ -630,11 +630,11 @@ nav{
 }
 
 /* swiper botones */
+
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+  left: 0px;
+  width: 100%;
+}
 
 .swiper-button-next::after,
 .swiper-button-prev::after,
