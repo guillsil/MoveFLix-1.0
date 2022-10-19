@@ -607,13 +607,16 @@ nav{
 }
 .titulo_movie{
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 0.5rem;
+    color: var(--blanco_pag);
+
+
 }
 .genero_movie{
     font-size: 1rem;
     font-weight: 500;
-    color: #dda90e9f;
+    color: var(--dorado_pag);
     margin-bottom: 0.5rem;
 }
 
