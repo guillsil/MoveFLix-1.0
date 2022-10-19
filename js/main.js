@@ -57,6 +57,15 @@ closeBtn.onclick = ()  => {
   cont_video.pause();
 };
 
+/* crear diccionario con clave y valor */
+var dic = {
+  "silvaguille@gmail.com": "moveflix",
+  "codoacodo@gmail.com": "moveflix",
+  "admin@gmail.com": "moveflix"
+};
+
+
+
 
 
 

@@ -9,16 +9,6 @@
     --blanco_pag: #FFFFFF;
 
 }
-/* scroll bar */
-html::-webkit-scrollbar{
-    width: 0.5rem;
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb{
-    background: var(--dorado_pag);
-    
-}
-
 ::selection{
     background-color: var(--dorado_pag);
     color: var(--dorado_pag);
@@ -101,11 +91,10 @@ header{
 .logo2:hover{
     color: var(--blanco_pag);
     transition: 1s all linear;
-
-    
-
 }
+
 /* buscador */
+
 .busqueda{
     max-width: 240px;
     width: 100%;
@@ -135,7 +124,9 @@ header{
     font-size: 0.938em;
     background: transparent;
 }
+
 /* usuario */
+
 .usuario{
     display: flex;
 }
@@ -146,7 +137,9 @@ header{
     object-fit: cover;
     object-position: center ;
 }
+
 /* NAVBAR */
+
 .navbar{
     position: fixed;
     display: flex;
@@ -207,7 +200,9 @@ header{
 .link_home {
     margin-top: 0.5rem;
   }
+
 /* menu hamburguesa */
+
 nav{
     height: 100px;
     width: 100px;
@@ -282,8 +277,6 @@ nav{
     color: #dda90edc;
     transition: 1s all linear;
 }
-    
-
 #check{
     display: none;
 }
@@ -334,9 +327,9 @@ nav{
 }
 
 
-
-
 /* botones */
+
+
 .watch_home{
     align-items: center;
     column-gap: 0.8rem;
@@ -450,6 +443,7 @@ nav{
 }
 
 /* keyframes para los boteones de la pag principal */
+
 @keyframes animate{
     0%{
        box-shadow: 0 0 0 0 rgba(228, 170, 77, 0.7);
@@ -471,6 +465,7 @@ nav{
 }
 
 /* video contenedor */
+
 .vedeo_contenedor{
     position: fixed;
     display: none;
@@ -483,7 +478,6 @@ nav{
     background: var(--azul_pag);
     z-index: 400;
 }
-/*    */
 .vedeo_contenedor.show_peli{
     display: flex;
 }
@@ -507,6 +501,7 @@ nav{
 
 
 /* Info Peli */
+
 .info_peli{
     margin-top: 2rem;
 }
@@ -521,8 +516,6 @@ nav{
     margin: 10px 0;
     max-width: 600px;
 }
-
-
 
 /* Descarga de la pelicula*/
 
@@ -591,11 +584,6 @@ nav{
     overflow: hidden;
 }
 
-
-
-/* hay que agregar una animacion cuando se pase el puntero por la imagen */
-
-
 .box_movie_img{
     width: 100%;
     height: 100%;
@@ -648,6 +636,10 @@ nav{
 .swiper-pagination:hover::after{
     color: var(--blanco_pag);
 } 
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  display: none;
+}
 
 
 /* Peliculas y Series */
@@ -935,7 +927,6 @@ main {
 
 /* ----- -----  Mediaqueries ----- ----- */
 
-/* Responsive  las paginas con responsive son la de peliculas y series , la principal no alcanzo el tiempo*/
 @media (max-width: 1400px){
     nav{
         display: none;
