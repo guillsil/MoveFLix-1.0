@@ -17,6 +17,8 @@
 	<script src="https://kit.fontawesome.com/6271527c2a.js" crossorigin="anonymous"></script>
 	<!-- js -->
 	<script src="/js/app.js" defer></script>
+	<!-- sweetaalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	<title>Formulario MoveFlix</title>
 </head>
@@ -28,12 +30,12 @@
 			</a>
 		</div>
 		
-		<form action="" class="formulario" id="formulario" name="fvalida">
+		<form action="https://formsubmit.co/silvaguille041@gmail.com" method="POST" class="formulario" id="formulario" name="fvalida">
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label  ">Usuario</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="juan123">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="user">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				
@@ -43,7 +45,7 @@
 			<div class="formulario__grupo" id="grupo__nombre">
 				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Pérez">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="name">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				
@@ -53,7 +55,7 @@
 			<div class="formulario__grupo" id="grupo__password">
 				<label for="password" class="formulario__label">Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder="password">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				
@@ -63,7 +65,7 @@
 			<div class="formulario__grupo" id="grupo__password2">
 				<label for="password2" class="formulario__label">Repetir Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password2" id="password2">
+					<input type="password" class="formulario__input" name="password2" id="password2" placeholder="password">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				
@@ -96,17 +98,13 @@
 					Acepto los Terminos y Condiciones
 				</label>
 			</div>
-
-			<div class="formulario__mensaje" id="formulario__mensaje">
-				
-			</div>
 			
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn" value="Enviar" onclick="validar()">Enviar</button>
-				
+				<button type="submit" class="formulario__btn" value="Enviar" onclick="validar()" ><input type="hidden" name="_next" value="https://moveflix.netlify.app/">Enviar</button>
 			</div>
 		</form>
 	</main>
-
+	<!-- sweetaalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

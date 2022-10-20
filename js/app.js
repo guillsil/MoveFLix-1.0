@@ -19,6 +19,14 @@ function mostrar(){
         button: "Aceptar",
     });
 }
+function mostrar2(){
+    swal({
+        title: "Registro exitoso",
+        text: "Ya puedes iniciar sesion, con el usuario y contraseña que te proporcionaremos",
+        icon: "success",
+        button: "Aceptar",
+    });
+}
 /* funciones para validar el foemulario */
 function validar(){
     /* validar el usuario */
@@ -52,7 +60,7 @@ function validar(){
         return false;
     }
     /* validar el telefono */
-    if (document.fvalida.telefono.value.length == 0 || isNaN(document.fvalida.telefono.value) || document.fvalida.telefono.value.length < 11){
+    if (document.fvalida.telefono.value.length > 0 && document.fvalida.telefono.value.length <= 11 && isNaN(document.fvalida.telefono.value)){
         alert("Por favor ingrese su telefono");
         document.fvalida.telefono.focus();
         return false;
@@ -63,10 +71,34 @@ function validar(){
         document.fvalida.terminos.focus();
         return false;
     }
-    /* envio del formulario */
-    alert("Formulario enviado");
-    document.fvalida.submit();
-    /* enviar a la pagiana de inicio  */
+    mostrar2();
+    /* redirigir al la pantalla principal */
     window.open("index.html", "_self");
-
+    return true;
 }
+
+//Funcion Formulario
+const $form = document.querySelector('#form')
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  const response = await fetch(this.action, {
+    method: this.method,
+    body:form,
+    headers:{
+      'Accept': 'application/json'      }
+  })
+
+  if(response.ok){
+    this.reset()
+    swal({
+      title: "inicio de sesion exitoso",
+      text: "Bienvenido a MoveFlix",
+      icon: "success",
+    });
+  }
+}
+
+
